@@ -538,6 +538,11 @@ class FoxAttirbutes extends Attirbute:
 		'eyeLid': Color.DIM_GRAY,
 		'eyeDark': Color.DIM_GRAY,
 		'earInner': Color.HOT_PINK,
+		'eyeMask': Color.DIM_GRAY,
+		'earShadow': Color.DIM_GRAY,
+		
+		'pupil' : Color.DARK_BLUE,
+		'iris' : Color.BLUE,
 		'headLight': Color.WHITE,
 		'tailLight': Color.WHITE,
 		'chest'  : Color.WHITE,
@@ -573,6 +578,8 @@ class GuineaPigAttirbutes extends Attirbute:
 		'eyeLid': Color.DIM_GRAY,
 		'muzzle': Color.YELLOW,
 		'belly': Color.YELLOW,
+		'pupil' : Color.DARK_BLUE,
+		'iris' : Color.BLUE,
 		}
 	
 	static var att : Dictionary ={}
@@ -603,6 +610,7 @@ class KangarooAttirbutes extends Attirbute:
 	
 	static var colors : Dictionary = {
 		'eyeBrow': Color.WHITE,
+		'earInner' : Color.DIM_GRAY,
 		'ear': Color.WHITE,
 		'eyeShadow' : Color.DIM_GRAY,
 		'eyeLid': Color.DIM_GRAY,
@@ -610,6 +618,10 @@ class KangarooAttirbutes extends Attirbute:
 		'belly': Color.YELLOW,
 		'arm': Color.WHITE,
 		'armDark' : Color.DIM_GRAY,
+		'pupil' : Color.DARK_BLUE,
+		'iris' : Color.BLUE,
+		'tailDark' : Color.DIM_GRAY,
+		
 		}
 	
 	static var att : Dictionary = {}
@@ -633,15 +645,17 @@ class HorseAttirbutes extends Attirbute:
 		}
 	
 	static var colors : Dictionary = {
-			'antler1' : Color.BISQUE,
 			'tummy' : Color.WHITE,
 			
 			'muzzle' : Color.CORNSILK,
+			'cheek': Color.CORNSILK,
 			'neck' : Color.WEB_GRAY,
 
 			'legStripe' : Color.WHITE,
 			'leg': Color.WEB_GRAY,
-			'shoulder': Color.WEB_GRAY,
+			#'shoulder': Color.WEB_GRAY,
+			'mane' :Color.DIM_GRAY,
+			'fancyMane' :Color.DIM_GRAY,
 			'hoof' : Color.DIM_GRAY,
 			'hoofHilite': Color.DARK_SLATE_GRAY,
 		
@@ -663,7 +677,9 @@ class HorseAttirbutes extends Attirbute:
 			'appoloosaTail' : Color.DIM_GRAY,
 			'pintoSpots' : Color.WHITE,
 			'hornHilite' : Color.WHITE,
-			'wing' : Color.WHITE,
+			'horn' : Color.DIM_GRAY,
+			'wing' : Color.DIM_GRAY,
+			'wingHilite': Color.WHITE,
 			
 			'legCly' : Color.WHITE,
 		}
