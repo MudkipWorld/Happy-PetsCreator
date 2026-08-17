@@ -1,7 +1,5 @@
 extends Control
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Globalsignals.recolor_part.connect(recolor_part)
 
@@ -39,7 +37,7 @@ func recolor_part():
 	%EarFluff.self_modulate = selected_data.color_layers['earFluff']
 	%Muzzle.self_modulate = selected_data.color_layers['cheek']
 	%Muzzle2.self_modulate = selected_data.color_layers['muzzleTop']
-	%Muzzle3.self_modulate = selected_data.color_layers['muzzleSide']
+	#%Muzzle3.self_modulate = selected_data.color_layers['muzzleSide']
 	%Nose2.self_modulate = selected_data.color_layers['noseTop']
 	%EyeBack.self_modulate = selected_data.color_layers['eyeback']
 	%Tail2.self_modulate = selected_data.color_layers['tailUndercoat']

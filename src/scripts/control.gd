@@ -13,7 +13,6 @@ enum ActionType {
 var current_action : ActionType
 static var current_pet : GlobalData.PetType = GlobalData.PetType.Cat
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	get_window().title = "HP-PetCreator v" + str(ProjectSettings.get_setting_with_override("application/config/version"))
 	%Files.get_popup().id_pressed.connect(file_menu_selected)

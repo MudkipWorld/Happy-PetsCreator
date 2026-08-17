@@ -10,10 +10,10 @@ enum PetType {
 	Wolf,
 	MaineCoon,
 	Triceratops,
-	#Fox,
-	#Horse,
-	#GuineaPig,
-	#Kangaroo
+	Fox,
+	Horse,
+	GuineaPig,
+	Kangaroo
 }
 
 static var pet_map : Dictionary[GlobalData.PetType, Dictionary] = {
@@ -27,10 +27,10 @@ static var pet_map : Dictionary[GlobalData.PetType, Dictionary] = {
 	PetType.MaineCoon : {'attribute' : Attirbute.MaineCoonAttirbutes, 'pets_data' : [], 'name' : 'maine_coon'},
 	PetType.Triceratops : {'attribute' : Attirbute.TriceratopsAttirbutes, 'pets_data' : [], 'name' : 'triceratops'},
 	
-	#PetType.Fox : {'attribute' : Attirbute.FoxAttirbutes, 'pets_data' : [], 'name' : 'fox'},
-	#PetType.Horse : {'attribute' : Attirbute.HorseAttirbutes, 'pets_data' : [], 'name' : 'horse'},
-	#PetType.GuineaPig : {'attribute' : Attirbute.GuineaPigAttirbutes, 'pets_data' : [], 'name' : 'guinea_pig'},
-	#PetType.Kangaroo : {'attribute' : Attirbute.KangarooAttirbutes, 'pets_data' : [], 'name' : 'kangaroo'},
+	PetType.Fox : {'attribute' : Attirbute.FoxAttirbutes, 'pets_data' : [], 'name' : 'fox'},
+	PetType.Horse : {'attribute' : Attirbute.HorseAttirbutes, 'pets_data' : [], 'name' : 'horse'},
+	PetType.GuineaPig : {'attribute' : Attirbute.GuineaPigAttirbutes, 'pets_data' : [], 'name' : 'guinea_pig'},
+	PetType.Kangaroo : {'attribute' : Attirbute.KangarooAttirbutes, 'pets_data' : [], 'name' : 'kangaroo'},
 }
 
 static var add_to_ui : Node

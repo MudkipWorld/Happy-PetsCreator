@@ -53,8 +53,8 @@ func add_ui_pet(type : GlobalData.PetType):
 		spawn.color_layer = i
 		%AttributesData.add_child(spawn)
 
-	for i in attribute_class.types.keys():
+	for i in attribute_class.pet_types.keys():
 		var spawn = type_option.instantiate()
 		spawn.type_layer = i
-		spawn.populate_option(attribute_class.types)
+		spawn.populate_option(attribute_class.pet_types)
 		%TypesData.add_child(spawn)
