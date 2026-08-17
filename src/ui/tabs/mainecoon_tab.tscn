@@ -1,0 +1,425 @@
+[gd_scene format=3 uid="uid://dhxdc2sj5bheu"]
+
+[ext_resource type="Script" uid="uid://bt7cevsvn45fm" path="res://scripts/ui/tabs/mainecoon_tab.gd" id="1_8wnrf"]
+[ext_resource type="Texture2D" uid="uid://bg62trmtmqtcb" path="res://assets/placeholder/mainecoon/Tail.png" id="2_1ew71"]
+[ext_resource type="Texture2D" uid="uid://clkwxcaejghd0" path="res://assets/placeholder/mainecoon/Body.png" id="3_8wnrf"]
+[ext_resource type="Texture2D" uid="uid://1ucgf0fj5vpa" path="res://assets/placeholder/mainecoon/Leg.png" id="4_jet8r"]
+[ext_resource type="Texture2D" uid="uid://cwvgpfii4vpyl" path="res://assets/placeholder/mainecoon/Foot.png" id="5_4y5ho"]
+[ext_resource type="Texture2D" uid="uid://clbfsr1i6qxpl" path="res://assets/placeholder/mainecoon/Toe.png" id="6_djgyt"]
+[ext_resource type="Texture2D" uid="uid://ciob0tbh1xujr" path="res://assets/placeholder/mainecoon/Chest.png" id="7_grjs7"]
+[ext_resource type="Texture2D" uid="uid://chul8lodvlju6" path="res://assets/placeholder/mainecoon/Head.png" id="8_0ihua"]
+[ext_resource type="Texture2D" uid="uid://moukfp2ipq46" path="res://assets/placeholder/mainecoon/Ear.png" id="9_rsngt"]
+[ext_resource type="Texture2D" uid="uid://bq8ht57nn3cof" path="res://assets/placeholder/mainecoon/Ear Dark.png" id="10_7brlm"]
+[ext_resource type="Texture2D" uid="uid://ebxfacaujcau" path="res://assets/placeholder/mainecoon/Ear Inner.png" id="11_seafd"]
+[ext_resource type="Texture2D" uid="uid://c1mjuubkth7xy" path="res://assets/placeholder/mainecoon/Beard.png" id="12_mm2x3"]
+[ext_resource type="Texture2D" uid="uid://e8iipf405exu" path="res://assets/placeholder/mainecoon/Chin.png" id="13_dpuwp"]
+[ext_resource type="Texture2D" uid="uid://b56r8jd8wp1ih" path="res://assets/placeholder/mainecoon/Muzzle.png" id="13_jet8r"]
+[ext_resource type="Texture2D" uid="uid://1xtdghm5fban" path="res://assets/placeholder/mainecoon/Nose Dark.png" id="14_ietur"]
+[ext_resource type="Texture2D" uid="uid://bdbhdhbv2ugab" path="res://assets/placeholder/mainecoon/Nose.png" id="15_15t0c"]
+[ext_resource type="Texture2D" uid="uid://dx4gnqak5xwr7" path="res://assets/placeholder/mainecoon/Mouth.png" id="16_8tdbx"]
+[ext_resource type="Texture2D" uid="uid://ced5ix2a51cnu" path="res://assets/placeholder/mainecoon/Brow.png" id="17_2ye54"]
+[ext_resource type="Texture2D" uid="uid://cpt13yha7rc6p" path="res://assets/placeholder/mainecoon/Eye Whites.png" id="18_ytbwi"]
+[ext_resource type="Texture2D" uid="uid://bkmtrqg8tnlrw" path="res://assets/placeholder/mainecoon/Iris.png" id="19_tcgnq"]
+[ext_resource type="Texture2D" uid="uid://wcjrgy6ji88p" path="res://assets/placeholder/mainecoon/Pupil.png" id="20_i52vk"]
+[ext_resource type="Texture2D" uid="uid://c6mk3nlf36ijy" path="res://assets/placeholder/mainecoon/Eye Shine.png" id="21_b3srg"]
+[ext_resource type="Texture2D" uid="uid://i7oc8mcko4eg" path="res://assets/placeholder/mainecoon/Eyeshadow.png" id="22_iawec"]
+[ext_resource type="Texture2D" uid="uid://6rn0ku332pyr" path="res://assets/placeholder/mainecoon/Whiskers.png" id="23_8wnrf"]
+
+[node name="MainecoonTab" type="VBoxContainer" unique_id=170270603]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("1_8wnrf")
+
+[node name="Control" type="Control" parent="." unique_id=1191872495]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Tail" type="TextureRect" parent="Control" unique_id=89763832]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_1ew71")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Body" type="TextureRect" parent="Control" unique_id=703646760]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_8wnrf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Legs" type="TextureRect" parent="Control" unique_id=530094394]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_jet8r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Paws" type="TextureRect" parent="Control" unique_id=110969506]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("5_4y5ho")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Paws2" type="TextureRect" parent="Control/Paws" unique_id=1870472202]
+unique_name_in_owner = true
+self_modulate = Color(0.47397572, 0.47397572, 0.47397572, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6_djgyt")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Ruff" type="TextureRect" parent="Control" unique_id=1169358450]
+unique_name_in_owner = true
+self_modulate = Color(0.7521985, 0.7983527, 0.9999992, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("7_grjs7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Head" type="TextureRect" parent="Control" unique_id=76453463]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("8_0ihua")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Ear" type="TextureRect" parent="Control/Head" unique_id=1088636545]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("9_rsngt")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Ear2" type="TextureRect" parent="Control/Head" unique_id=907553741]
+unique_name_in_owner = true
+self_modulate = Color(0.17380437, 0.00028965087, 0.7034124, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("10_7brlm")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InnerEar" type="TextureRect" parent="Control/Head" unique_id=496475306]
+unique_name_in_owner = true
+self_modulate = Color(1, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("11_seafd")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Beard" type="TextureRect" parent="Control/Head" unique_id=1322048487]
+unique_name_in_owner = true
+self_modulate = Color(0.4344377, 0.49564898, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("12_mm2x3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Muzzle" type="TextureRect" parent="Control/Head" unique_id=1317860933]
+unique_name_in_owner = true
+self_modulate = Color(0.80238867, 0.8399232, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("13_jet8r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Chin" type="TextureRect" parent="Control/Head" unique_id=2052370956]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("13_dpuwp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Nose2" type="TextureRect" parent="Control/Head" unique_id=201304142]
+unique_name_in_owner = true
+self_modulate = Color(0.9279688, 0.0008717442, 0.9538463, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("14_ietur")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Nose" type="TextureRect" parent="Control/Head" unique_id=289822630]
+unique_name_in_owner = true
+self_modulate = Color(1, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("15_15t0c")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Mouth" type="TextureRect" parent="Control/Head" unique_id=1138782510]
+unique_name_in_owner = true
+self_modulate = Color(0.31061712, 0.31061712, 0.3106171, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("16_8tdbx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Eyebrows" type="TextureRect" parent="Control/Head" unique_id=1368980035]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("17_2ye54")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="EyeWhite" type="TextureRect" parent="Control/Head" unique_id=1174548853]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("18_ytbwi")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Iris" type="TextureRect" parent="Control/Head" unique_id=1147742619]
+unique_name_in_owner = true
+self_modulate = Color(0.8002418, 0.668927, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("19_tcgnq")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Pupil" type="TextureRect" parent="Control/Head" unique_id=1290975654]
+unique_name_in_owner = true
+self_modulate = Color(0.370729, 0.3062913, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("20_i52vk")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Pupil2" type="TextureRect" parent="Control/Head" unique_id=1171508592]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("21_b3srg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Eyeline" type="TextureRect" parent="Control/Head" unique_id=1274671544]
+unique_name_in_owner = true
+self_modulate = Color(0.24840015, 0.24840018, 0.24840015, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("22_iawec")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Whiskers" type="TextureRect" parent="Control/Head" unique_id=408696766]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("23_8wnrf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="." unique_id=1382698068]
+visible = false
+layout_mode = 2
+text = "Notes: Ruff are for persian cats while Face is for skinny cats"
+horizontal_alignment = 1
+vertical_alignment = 1

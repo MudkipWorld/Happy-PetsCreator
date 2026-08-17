@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://1rx4qkatg7s6"]
+
+[ext_resource type="Script" uid="uid://codwdgki5ffbt" path="res://scripts/ui/type_options.gd" id="1_qbmj0"]
+
+[node name="TypeOptions" type="HBoxContainer" unique_id=207505444]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+script = ExtResource("1_qbmj0")
+
+[node name="Label" type="Label" parent="." unique_id=589672387]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+
+[node name="OptionButton" type="OptionButton" parent="." unique_id=909543529]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+disabled = true
+
+[connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]

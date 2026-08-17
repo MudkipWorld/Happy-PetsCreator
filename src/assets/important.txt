@@ -1,0 +1,35 @@
+	  public function toAppearanceData() : AppearanceData
+	  {
+		 var appearanceData:AppearanceData = new AppearanceData();
+		 var furColor:Number = GetRawColor(this.mFurColor);
+		 appearanceData.attributes = this.mAppearanceAttributesList;
+		 appearanceData.types = this.mAppearanceTypesList;
+		 appearanceData.colors = this.mAppearanceColorList;
+		 appearanceData.bodyType = this.mBodyType;
+		 this.setAppearanceAttribute(appearanceData,"scale",Math.round(this.mScale * 100));
+		 this.setAppearanceColor(appearanceData,"body",furColor);
+		 this.setAppearanceColor(appearanceData,"eyeLid",furColor);
+		 this.setAppearanceColor(appearanceData,"head",furColor);
+		 this.setAppearanceColor(appearanceData,"leg",furColor);
+		 this.setAppearanceColor(appearanceData,"tail",furColor);
+		 this.setAppearanceColor(appearanceData,"earInner",GetRawColor(this.mInnerEarColor,furColor));
+		 this.setAppearanceColor(appearanceData,"earOuter",GetRawColor(this.mOuterEarColor,furColor));
+		 this.setAppearanceColor(appearanceData,"eyeBrow",GetRawColor(eColorTypeDarker,furColor));
+		 this.setAppearanceColor(appearanceData,"eyeShadow",GetRawColor(this.mEyeShadowColor,furColor));
+		 this.setAppearanceColor(appearanceData,"face",GetRawColor(this.mFaceColor,furColor));
+		 this.setAppearanceColor(appearanceData,"foot",GetRawColor(this.mFootColor,furColor));
+		 this.setAppearanceColor(appearanceData,"mouth",GetRawColor(eColorTypeDarker,furColor));
+		 this.setAppearanceColor(appearanceData,"nose",GetRawColor(this.mNoseColor,furColor));
+		 this.storeGlowColors(appearanceData,furColor);
+		 this.setAppearanceColor(appearanceData,"iris",this.mEyeColorIris);
+		 this.setAppearanceColor(appearanceData,"pupil",this.mEyeColorPupil);
+		 this.setAppearanceAttribute(appearanceData,"glow",this.mGlowType == eGlowTypePlain ? 1 : 0);
+		 this.setAppearanceAttribute(appearanceData,"gradientGlow",this.mGlowType == eGlowTypeGradient ? 1 : 0);
+		 this.setAppearanceAttribute(appearanceData,"candyGlow",this.mGlowType == eGlowTypeCandy ? 1 : 0);
+		 this.setAppearanceAttribute(appearanceData,"blacklight",this.mGlowType == eGlowTypeBlacklight ? 1 : 0);
+		 this.setAppearanceAttribute(appearanceData,"vampire",this.mVampireType == vampireTypes.trueVampire ? 1 : 0);
+		 this.setAppearanceAttribute(appearanceData,"dayNight",this.mVampireType == vampireTypes.dayAndNight ? 1 : 0);
+		 this.setAppearanceAttribute(appearanceData,"vampireNightItem",this.mVampireNightID);
+		 this.setAppearanceAttribute(appearanceData,"ghost",this.hasAnyGhostEffect ? 1 : 0);
+		 return appearanceData;
+	  }

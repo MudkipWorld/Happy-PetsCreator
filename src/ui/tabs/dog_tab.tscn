@@ -1,0 +1,338 @@
+[gd_scene format=3 uid="uid://du1hyx3oavc58"]
+
+[ext_resource type="Script" uid="uid://c7kyb220ylh6s" path="res://scripts/ui/tabs/dog_tab.gd" id="1_u6kju"]
+[ext_resource type="Texture2D" uid="uid://b3ik32mo7jdrm" path="res://assets/placeholder/dog/Tail.png" id="2_3pvg0"]
+[ext_resource type="Texture2D" uid="uid://cejl2afxbn5gt" path="res://assets/placeholder/dog/Body.png" id="3_u6kju"]
+[ext_resource type="Texture2D" uid="uid://c1dmdujt4em6p" path="res://assets/placeholder/dog/Legs.png" id="4_mx6wc"]
+[ext_resource type="Texture2D" uid="uid://bkrpvqiesh3xr" path="res://assets/placeholder/dog/Paws.png" id="5_4uvpg"]
+[ext_resource type="Texture2D" uid="uid://c2ri5l6a0r6t6" path="res://assets/placeholder/dog/Toes.png" id="6_qj70b"]
+[ext_resource type="Texture2D" uid="uid://cbsqc0gj2f55o" path="res://assets/placeholder/dog/Head.png" id="7_sb54k"]
+[ext_resource type="Texture2D" uid="uid://grff1bbacite" path="res://assets/placeholder/dog/Ear.png" id="8_qy1a5"]
+[ext_resource type="Texture2D" uid="uid://bj11mw6xowxi1" path="res://assets/placeholder/dog/InnerEar.png" id="9_lt0bd"]
+[ext_resource type="Texture2D" uid="uid://ju6g5epy7f6j" path="res://assets/placeholder/dog/Muzzle.png" id="10_3pvg0"]
+[ext_resource type="Texture2D" uid="uid://7xmfd8cjycn8" path="res://assets/placeholder/dog/Nose.png" id="10_wwl33"]
+[ext_resource type="Texture2D" uid="uid://dcfbimghysxb2" path="res://assets/placeholder/dog/Mouth.png" id="11_1kpsd"]
+[ext_resource type="Texture2D" uid="uid://dw1iwhgdih1p3" path="res://assets/placeholder/dog/Tongue.png" id="12_1kpsd"]
+[ext_resource type="Texture2D" uid="uid://djlcdque0qa4w" path="res://assets/placeholder/dog/Eyebrows.png" id="12_3pvg0"]
+[ext_resource type="Texture2D" uid="uid://3v8fqakh3rkr" path="res://assets/placeholder/dog/Eyeline.png" id="13_u6kju"]
+[ext_resource type="Texture2D" uid="uid://utmltkk5siyv" path="res://assets/placeholder/dog/Eyewhite.png" id="14_mx6wc"]
+[ext_resource type="Texture2D" uid="uid://c4tvsm5uw4txv" path="res://assets/placeholder/dog/Iris.png" id="15_4uvpg"]
+[ext_resource type="Texture2D" uid="uid://curef40l6840d" path="res://assets/placeholder/dog/Pupil.png" id="16_qj70b"]
+[ext_resource type="Texture2D" uid="uid://dc3e4wk0h2xkp" path="res://assets/placeholder/dog/EyeShine.png" id="17_sb54k"]
+
+[node name="DogTab" type="VBoxContainer" unique_id=170270603]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("1_u6kju")
+
+[node name="Control" type="Control" parent="." unique_id=1191872495]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Tail" type="TextureRect" parent="Control" unique_id=89763832]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_3pvg0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Body" type="TextureRect" parent="Control" unique_id=703646760]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_u6kju")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Legs" type="TextureRect" parent="Control" unique_id=530094394]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_mx6wc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Paws" type="TextureRect" parent="Control" unique_id=110969506]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("5_4uvpg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Paws2" type="TextureRect" parent="Control/Paws" unique_id=1870472202]
+unique_name_in_owner = true
+self_modulate = Color(0.47397572, 0.47397572, 0.47397572, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6_qj70b")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Head" type="TextureRect" parent="Control" unique_id=76453463]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("7_sb54k")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Ear" type="TextureRect" parent="Control/Head" unique_id=1088636545]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("8_qy1a5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InnerEar" type="TextureRect" parent="Control/Head" unique_id=496475306]
+unique_name_in_owner = true
+self_modulate = Color(1, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("9_lt0bd")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Muzzle" type="TextureRect" parent="Control/Head" unique_id=1598788420]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("10_3pvg0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Nose" type="TextureRect" parent="Control/Head" unique_id=289822630]
+unique_name_in_owner = true
+self_modulate = Color(1, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("10_wwl33")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Mouth" type="TextureRect" parent="Control/Head" unique_id=1138782510]
+unique_name_in_owner = true
+self_modulate = Color(0.31061712, 0.31061712, 0.3106171, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("11_1kpsd")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Tongue" type="TextureRect" parent="Control/Head/Mouth" unique_id=1359501514]
+self_modulate = Color(1, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("12_1kpsd")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Eyebrows" type="TextureRect" parent="Control/Head" unique_id=1368980035]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("12_3pvg0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Eyeline" type="TextureRect" parent="Control/Head" unique_id=1274671544]
+unique_name_in_owner = true
+self_modulate = Color(0.24840015, 0.24840018, 0.24840015, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("13_u6kju")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="EyeWhite" type="TextureRect" parent="Control/Head" unique_id=1174548853]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("14_mx6wc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Iris" type="TextureRect" parent="Control/Head" unique_id=1147742619]
+unique_name_in_owner = true
+self_modulate = Color(0.8002418, 0.668927, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("15_4uvpg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Pupil" type="TextureRect" parent="Control/Head" unique_id=1290975654]
+unique_name_in_owner = true
+self_modulate = Color(0.370729, 0.3062913, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("16_qj70b")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Pupil2" type="TextureRect" parent="Control/Head" unique_id=1171508592]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("17_sb54k")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="." unique_id=1382698068]
+visible = false
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1

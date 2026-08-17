@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dosrf6aadxxok"]
+
+[ext_resource type="Script" uid="uid://oqs5ju03pwfx" path="res://scripts/ui/attributes_check.gd" id="1_vviyp"]
+
+[node name="AttributesCheck" type="CheckBox" unique_id=714124693]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 24.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+disabled = true
+script = ExtResource("1_vviyp")

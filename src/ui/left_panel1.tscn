@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://ceri2peu2e6j0"]
+
+[ext_resource type="Script" uid="uid://b3ch804ycnqic" path="res://scripts/ui/left_panel_1.gd" id="1_rb66n"]
+
+[node name="LeftPanel1" type="Panel" unique_id=1832570157]
+custom_minimum_size = Vector2(200, 0)
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+script = ExtResource("1_rb66n")
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=1472521804]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBox" type="VBoxContainer" parent="Margin" unique_id=325846698]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Margin/VBox" unique_id=531904333]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Data" type="VBoxContainer" parent="Margin/VBox/ScrollContainer" unique_id=1844802258]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Colors" type="FoldableContainer" parent="Margin/VBox/ScrollContainer/Data" unique_id=918148018]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 1
+folded = true
+title = "Colors"
+
+[node name="ColorsData" type="VBoxContainer" parent="Margin/VBox/ScrollContainer/Data/Colors" unique_id=1568370646]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="Attributes" type="FoldableContainer" parent="Margin/VBox/ScrollContainer/Data" unique_id=319634011]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 1
+folded = true
+title = "Attributes"
+
+[node name="AttributesData" type="VBoxContainer" parent="Margin/VBox/ScrollContainer/Data/Attributes" unique_id=502150718]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="Types" type="FoldableContainer" parent="Margin/VBox/ScrollContainer/Data" unique_id=1740545651]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 1
+folded = true
+title = "Types"
+
+[node name="TypesData" type="VBoxContainer" parent="Margin/VBox/ScrollContainer/Data/Types" unique_id=1068001740]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2

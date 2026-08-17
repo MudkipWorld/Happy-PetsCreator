@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c4pjadn65hy17"]
+
+[ext_resource type="Script" uid="uid://dr0wxp1di3air" path="res://scripts/ui/color_box.gd" id="1_via4a"]
+
+[node name="ColorBox" type="HBoxContainer" unique_id=1379338712]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+script = ExtResource("1_via4a")
+
+[node name="Label" type="Label" parent="." unique_id=1112927738]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Placeholder"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="." unique_id=762834859]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+edit_alpha = false
+edit_intensity = false
+
+[connection signal="color_changed" from="ColorPickerButton" to="." method="_on_color_picker_button_color_changed"]

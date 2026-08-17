@@ -1,0 +1,516 @@
+[gd_scene format=3 uid="uid://dq784337pfghw"]
+
+[ext_resource type="Script" uid="uid://f0ly4f6meqeb" path="res://scripts/ui/tabs/triceratops_tab.gd" id="1_yk5qj"]
+[ext_resource type="Texture2D" uid="uid://bhwlxfersd44c" path="res://assets/placeholder/triceratops/Tail.png" id="2_yk5qj"]
+[ext_resource type="Texture2D" uid="uid://drwonnc84rqoj" path="res://assets/placeholder/triceratops/Body.png" id="3_4jj5m"]
+[ext_resource type="Texture2D" uid="uid://dqspcnnrglocv" path="res://assets/placeholder/triceratops/Tail Stripe.png" id="3_vr7kh"]
+[ext_resource type="Texture2D" uid="uid://dfqcmybfyuv25" path="res://assets/placeholder/triceratops/Torso Spots.png" id="4_4jj5m"]
+[ext_resource type="Texture2D" uid="uid://dmsjxvsf2fkan" path="res://assets/placeholder/triceratops/Leg.png" id="4_dpmc5"]
+[ext_resource type="Texture2D" uid="uid://ban87rjxnw16c" path="res://assets/placeholder/triceratops/Torso Stripe.png" id="5_c4rxf"]
+[ext_resource type="Texture2D" uid="uid://62rh47faxtm6" path="res://assets/placeholder/triceratops/Foot.png" id="5_dpmc5"]
+[ext_resource type="Texture2D" uid="uid://cdbv8wqjb6wfj" path="res://assets/placeholder/triceratops/Toenails.png" id="6_dpmc5"]
+[ext_resource type="Texture2D" uid="uid://duo62xeo6vu6e" path="res://assets/placeholder/triceratops/Foot Sole.png" id="6_yk5qj"]
+[ext_resource type="Texture2D" uid="uid://ca60heleyixix" path="res://assets/placeholder/triceratops/Leg Spots.png" id="7_wwcgp"]
+[ext_resource type="Texture2D" uid="uid://bf5acnhshj10l" path="res://assets/placeholder/triceratops/Shield.png" id="8_4jj5m"]
+[ext_resource type="Texture2D" uid="uid://cw30m5wqg2oql" path="res://assets/placeholder/triceratops/Shield Hilite.png" id="9_5gq51"]
+[ext_resource type="Texture2D" uid="uid://eckyq4kxjkb7" path="res://assets/placeholder/triceratops/Head.png" id="10_c4rxf"]
+[ext_resource type="Texture2D" uid="uid://cnlhpgbcdobik" path="res://assets/placeholder/triceratops/Horn.png" id="11_5gq51"]
+[ext_resource type="Texture2D" uid="uid://brsno2d5d6h1n" path="res://assets/placeholder/triceratops/Horn Base.png" id="12_c4rxf"]
+[ext_resource type="Texture2D" uid="uid://c1nwj4ou3fctu" path="res://assets/placeholder/triceratops/Horn Shadow.png" id="13_wwcgp"]
+[ext_resource type="Texture2D" uid="uid://dg3w03gjaiko5" path="res://assets/placeholder/triceratops/Eye Whites.png" id="14_yk5qj"]
+[ext_resource type="Texture2D" uid="uid://dqm6hg8tx4mk" path="res://assets/placeholder/triceratops/Iris.png" id="15_4jj5m"]
+[ext_resource type="Texture2D" uid="uid://ucsnx42vc2t2" path="res://assets/placeholder/triceratops/Pupil.png" id="16_5gq51"]
+[ext_resource type="Texture2D" uid="uid://bf3mbkuvamnrx" path="res://assets/placeholder/triceratops/Eye Shine.png" id="17_c4rxf"]
+[ext_resource type="Texture2D" uid="uid://c3x3r3meumyya" path="res://assets/placeholder/triceratops/Head Spots.png" id="17_wwcgp"]
+[ext_resource type="Texture2D" uid="uid://xyw7u2sfr237" path="res://assets/placeholder/triceratops/EyeShadow.png" id="18_wwcgp"]
+[ext_resource type="Texture2D" uid="uid://7m4sl4bwwfo3" path="res://assets/placeholder/triceratops/Eyelid.png" id="20_4jj5m"]
+[ext_resource type="Texture2D" uid="uid://cob6sr6st2040" path="res://assets/placeholder/triceratops/Nose.png" id="22_vr7kh"]
+[ext_resource type="Texture2D" uid="uid://dpqbn3jbeuw0g" path="res://assets/placeholder/triceratops/Nose Shadow.png" id="23_bvrhh"]
+[ext_resource type="Texture2D" uid="uid://bdpepjfi4eg57" path="res://assets/placeholder/triceratops/Mouth.png" id="24_boabg"]
+[ext_resource type="Texture2D" uid="uid://chlrr143dkbm8" path="res://assets/placeholder/triceratops/Head Hilite.png" id="27_vr7kh"]
+
+[node name="TriceratopsTab" type="VBoxContainer" unique_id=170270603]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("1_yk5qj")
+
+[node name="Control" type="Control" parent="." unique_id=1191872495]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Tail" type="TextureRect" parent="Control" unique_id=89763832]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_yk5qj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Tail2" type="TextureRect" parent="Control" unique_id=1414636766]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_vr7kh")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Body" type="TextureRect" parent="Control" unique_id=703646760]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_4jj5m")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Body2" type="TextureRect" parent="Control" unique_id=1939059248]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_4jj5m")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Body3" type="TextureRect" parent="Control" unique_id=158929691]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("5_c4rxf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Legs" type="TextureRect" parent="Control" unique_id=530094394]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_dpmc5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Legs2" type="TextureRect" parent="Control" unique_id=238264828]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("7_wwcgp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Paws" type="TextureRect" parent="Control" unique_id=110969506]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("5_dpmc5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Paws3" type="TextureRect" parent="Control/Paws" unique_id=1737274642]
+unique_name_in_owner = true
+self_modulate = Color(0.47397572, 0.47397572, 0.47397572, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6_yk5qj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Paws2" type="TextureRect" parent="Control/Paws" unique_id=1870472202]
+unique_name_in_owner = true
+self_modulate = Color(0.47397572, 0.47397572, 0.47397572, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6_dpmc5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Shield" type="TextureRect" parent="Control" unique_id=520787944]
+unique_name_in_owner = true
+self_modulate = Color(0.42131373, 0.47853875, 0.99998707, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("8_4jj5m")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Shield2" type="TextureRect" parent="Control" unique_id=815536856]
+unique_name_in_owner = true
+self_modulate = Color(0.83006746, 0.8630344, 0.9999979, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("9_5gq51")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Head" type="TextureRect" parent="Control" unique_id=76453463]
+unique_name_in_owner = true
+self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("10_c4rxf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Horn" type="TextureRect" parent="Control/Head" unique_id=1088636545]
+unique_name_in_owner = true
+self_modulate = Color(0.27260706, 0.14235416, 0.9998724, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("11_5gq51")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Horn3" type="TextureRect" parent="Control/Head" unique_id=801714745]
+unique_name_in_owner = true
+self_modulate = Color(0.27260706, 0.14235416, 0.9998724, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("12_c4rxf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Horn2" type="TextureRect" parent="Control/Head" unique_id=119979366]
+unique_name_in_owner = true
+self_modulate = Color(0.11615553, 0.00014083058, 0.5123259, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("13_wwcgp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HeadSpots" type="TextureRect" parent="Control/Head" unique_id=2040789942]
+unique_name_in_owner = true
+self_modulate = Color(0.31061712, 0.31061712, 0.3106171, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("17_wwcgp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="EyeWhite" type="TextureRect" parent="Control/Head" unique_id=1174548853]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("14_yk5qj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Iris" type="TextureRect" parent="Control/Head" unique_id=1147742619]
+unique_name_in_owner = true
+self_modulate = Color(0.8002418, 0.668927, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("15_4jj5m")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Pupil" type="TextureRect" parent="Control/Head" unique_id=1290975654]
+unique_name_in_owner = true
+self_modulate = Color(0.370729, 0.3062913, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("16_5gq51")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Pupil2" type="TextureRect" parent="Control/Head" unique_id=1171508592]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("17_c4rxf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Eyelid" type="TextureRect" parent="Control/Head" unique_id=873648760]
+unique_name_in_owner = true
+self_modulate = Color(0.38170326, 0.38170323, 0.38170323, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("20_4jj5m")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Eyeline" type="TextureRect" parent="Control/Head" unique_id=1274671544]
+unique_name_in_owner = true
+self_modulate = Color(0.24840015, 0.24840018, 0.24840015, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("18_wwcgp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Nose" type="TextureRect" parent="Control/Head" unique_id=289822630]
+unique_name_in_owner = true
+self_modulate = Color(1, 0.6392157, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("22_vr7kh")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Nose2" type="TextureRect" parent="Control/Head" unique_id=2122893420]
+unique_name_in_owner = true
+self_modulate = Color(1, 0.8468501, 0.99616486, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("23_bvrhh")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HeadHilite" type="TextureRect" parent="Control/Head" unique_id=1628565673]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("27_vr7kh")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Mouth" type="TextureRect" parent="Control/Head" unique_id=1138782510]
+unique_name_in_owner = true
+self_modulate = Color(0.31061712, 0.31061712, 0.3106171, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("24_boabg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="." unique_id=1382698068]
+visible = false
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1

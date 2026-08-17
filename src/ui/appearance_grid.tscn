@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://cuah4q02rq25s"]
+
+[ext_resource type="PackedScene" uid="uid://b4crx15oygpyh" path="res://ui/tabs/cat_tab.tscn" id="1_emvj6"]
+[ext_resource type="Script" uid="uid://bd2uylbvkahjv" path="res://scripts/ui/appearance_grid.gd" id="1_f3pix"]
+[ext_resource type="PackedScene" uid="uid://du1hyx3oavc58" path="res://ui/tabs/dog_tab.tscn" id="3_6ns3n"]
+[ext_resource type="PackedScene" uid="uid://di05jdc6uwgvg" path="res://ui/tabs/wolf_tab.tscn" id="4_8y46j"]
+[ext_resource type="PackedScene" uid="uid://dpcllbxxyjmcg" path="res://ui/tabs/corgi_tab.tscn" id="4_ukyd0"]
+[ext_resource type="PackedScene" uid="uid://dhxdc2sj5bheu" path="res://ui/tabs/mainecoon_tab.tscn" id="6_7emjr"]
+[ext_resource type="PackedScene" uid="uid://cklwyvhdkgvn2" path="res://ui/tabs/yorkie_tab.tscn" id="7_7awn6"]
+[ext_resource type="PackedScene" uid="uid://6a0rcm4hece0" path="res://ui/tabs/reindeer_tab.tscn" id="8_v1cjv"]
+[ext_resource type="PackedScene" uid="uid://dq784337pfghw" path="res://ui/tabs/triceratops_tab.tscn" id="9_bqrgr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aekvq"]
+
+[node name="AppearanceGrid" type="VBoxContainer" unique_id=1624301966]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("1_f3pix")
+
+[node name="Label" type="Label" parent="." unique_id=351167839]
+layout_mode = 2
+text = "Visuals"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PetsReferences" type="TabContainer" parent="." unique_id=1809829512]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_aekvq")
+current_tab = 0
+tabs_visible = false
+
+[node name="CatTab" parent="PetsReferences" unique_id=378414444 instance=ExtResource("1_emvj6")]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="DogTab" parent="PetsReferences" unique_id=170270603 instance=ExtResource("3_6ns3n")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="CorgiTab" parent="PetsReferences" unique_id=1402101964 instance=ExtResource("4_ukyd0")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="WolfTab" parent="PetsReferences" unique_id=1779495220 instance=ExtResource("4_8y46j")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="MainecoonTab" parent="PetsReferences" unique_id=1406725140 instance=ExtResource("6_7emjr")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="YorkieTab" parent="PetsReferences" unique_id=811327280 instance=ExtResource("7_7awn6")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 5
+
+[node name="ReindeerTab" parent="PetsReferences" unique_id=1218397172 instance=ExtResource("8_v1cjv")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 6
+
+[node name="TriceratopsTab" parent="PetsReferences" unique_id=282100030 instance=ExtResource("9_bqrgr")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 7
+
+[node name="Placeholder" type="VBoxContainer" parent="PetsReferences" unique_id=2123062040]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 8

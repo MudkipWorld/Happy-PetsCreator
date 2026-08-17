@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://bnu12cf37c4fh"]
+
+[ext_resource type="Texture2D" uid="uid://sy00e8j4lp7f" path="res://assets/all_ui_pieces.svg" id="1_b0gs3"]
+[ext_resource type="Script" uid="uid://bmib7vax4ifla" path="res://scripts/ui/left_panel_2.gd" id="1_l806c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_373g5"]
+atlas = ExtResource("1_b0gs3")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l806c"]
+atlas = ExtResource("1_b0gs3")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b0gs3"]
+atlas = ExtResource("1_b0gs3")
+region = Rect2(144, 16, 16, 16)
+
+[node name="LeftPanel2" type="Panel" unique_id=228248778]
+custom_minimum_size = Vector2(200, 0)
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+script = ExtResource("1_l806c")
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=260845961]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBox" type="VBoxContainer" parent="Margin" unique_id=1615854175]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="Margin/VBox" unique_id=1864376104]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+placeholder_text = "Pet Name"
+
+[node name="GridContainer" type="GridContainer" parent="Margin/VBox" unique_id=1368818835]
+layout_mode = 2
+columns = 2
+
+[node name="Label" type="Label" parent="Margin/VBox/GridContainer" unique_id=2136268193]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Pet Type"
+
+[node name="PetOption" type="OptionButton" parent="Margin/VBox/GridContainer" unique_id=467569071]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text_overrun_behavior = 3
+search_bar_enabled = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margin/VBox" unique_id=346647904]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="AddData" type="Button" parent="Margin/VBox/HBoxContainer" unique_id=1174593814]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+tooltip_text = "Add Pet"
+icon = SubResource("AtlasTexture_373g5")
+icon_alignment = 1
+expand_icon = true
+
+[node name="SortTree" type="Button" parent="Margin/VBox/HBoxContainer" unique_id=1025674636]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+tooltip_text = "Sort Tree"
+icon = SubResource("AtlasTexture_l806c")
+icon_alignment = 1
+expand_icon = true
+
+[node name="RemoveData" type="Button" parent="Margin/VBox/HBoxContainer" unique_id=676221733]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_horizontal = 10
+tooltip_text = "Remove Pet"
+icon = SubResource("AtlasTexture_b0gs3")
+icon_alignment = 1
+expand_icon = true
+
+[node name="PetsTree" type="Tree" parent="Margin/VBox" unique_id=1245854118]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 14
+hide_root = true
+select_mode = 2
+
+[connection signal="text_changed" from="Margin/VBox/LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="item_selected" from="Margin/VBox/GridContainer/PetOption" to="." method="_on_pet_option_item_selected"]
+[connection signal="pressed" from="Margin/VBox/HBoxContainer/AddData" to="." method="_on_add_data_pressed"]
+[connection signal="pressed" from="Margin/VBox/HBoxContainer/SortTree" to="." method="_on_sort_tree_pressed"]
+[connection signal="pressed" from="Margin/VBox/HBoxContainer/RemoveData" to="." method="_on_remove_data_pressed"]
+[connection signal="empty_clicked" from="Margin/VBox/PetsTree" to="." method="_on_pets_tree_empty_clicked"]
+[connection signal="multi_selected" from="Margin/VBox/PetsTree" to="." method="_on_pets_tree_multi_selected"]

@@ -1,0 +1,179 @@
+[gd_scene format=3 uid="uid://cqng3spn6oxqc"]
+
+[ext_resource type="Script" uid="uid://cx0o4prxqk28u" path="res://scripts/ui/reference.gd" id="1_adkbn"]
+
+[node name="Reference" type="VBoxContainer" unique_id=299392145]
+custom_minimum_size = Vector2(200, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+script = ExtResource("1_adkbn")
+
+[node name="Fold" type="FoldableContainer" parent="." unique_id=672438479]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+title = "Reference Tab"
+
+[node name="PanelContainer" type="PanelContainer" parent="Fold" unique_id=139680824]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Fold/PanelContainer" unique_id=931730315]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="." unique_id=89616889]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=337668927]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/Margin" unique_id=808476186]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBoxContainer" unique_id=1950188957]
+layout_mode = 2
+text = "Price"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Grid" type="GridContainer" parent="Panel/Margin/VBoxContainer" unique_id=261040348]
+layout_mode = 2
+columns = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBoxContainer/Grid" unique_id=438745449]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Coins"
+
+[node name="Coin" type="SpinBox" parent="Panel/Margin/VBoxContainer/Grid" unique_id=1100897648]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1000000000000.0
+editable = false
+
+[node name="Label2" type="Label" parent="Panel/Margin/VBoxContainer/Grid" unique_id=277256508]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Cash"
+
+[node name="Cash" type="SpinBox" parent="Panel/Margin/VBoxContainer/Grid" unique_id=143404824]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1000000000000.0
+editable = false
+
+[node name="Label3" type="Label" parent="Panel/Margin/VBoxContainer/Grid" unique_id=549492219]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Arcade Tickets"
+
+[node name="Tickets" type="SpinBox" parent="Panel/Margin/VBoxContainer/Grid" unique_id=2056978776]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1000000000000.0
+editable = false
+
+[node name="HSeparator" type="HSeparator" parent="Panel/Margin/VBoxContainer" unique_id=1961823161]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="Panel/Margin/VBoxContainer" unique_id=1844525103]
+layout_mode = 2
+text = "Properties"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Grid2" type="GridContainer" parent="Panel/Margin/VBoxContainer" unique_id=1018508482]
+layout_mode = 2
+columns = 2
+
+[node name="Label3" type="Label" parent="Panel/Margin/VBoxContainer/Grid2" unique_id=1418398538]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Age"
+
+[node name="Age" type="SpinBox" parent="Panel/Margin/VBoxContainer/Grid2" unique_id=1178483181]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1000000000000.0
+editable = false
+
+[node name="Label4" type="Label" parent="Panel/Margin/VBoxContainer/Grid2" unique_id=1206018200]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Hunger"
+
+[node name="Hunger" type="SpinBox" parent="Panel/Margin/VBoxContainer/Grid2" unique_id=674829378]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1000000000000.0
+editable = false
+
+[node name="Label5" type="Label" parent="Panel/Margin/VBoxContainer/Grid2" unique_id=1085093846]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Min Level"
+
+[node name="MinLevel" type="SpinBox" parent="Panel/Margin/VBoxContainer/Grid2" unique_id=1069138103]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 1.0
+max_value = 999.0
+value = 1.0
+editable = false
+
+[node name="Label6" type="Label" parent="Panel/Margin/VBoxContainer/Grid2" unique_id=923497940]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Size"
+
+[node name="SizeModier" type="SpinBox" parent="Panel/Margin/VBoxContainer/Grid2" unique_id=1871108718]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 5.0
+max_value = 9000.0
+value = 100.0
+editable = false
+
+[node name="Label3" type="Label" parent="Panel/Margin/VBoxContainer" unique_id=1237826173]
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 2
+size_flags_vertical = 10
+theme_override_colors/font_color = Color(0.6542321, 0.6542321, 0.654232, 1)
+theme_override_font_sizes/font_size = 14
+text = "(Note : Hunger is in Seconds; 7200sec = 2h
+Age; 3600 = 4h
+X-Ray pets are ghosts without Glow."
+vertical_alignment = 1
+autowrap_mode = 2
+
+[connection signal="value_changed" from="Panel/Margin/VBoxContainer/Grid/Coin" to="." method="_on_coin_value_changed"]
+[connection signal="value_changed" from="Panel/Margin/VBoxContainer/Grid/Cash" to="." method="_on_cash_value_changed"]
+[connection signal="value_changed" from="Panel/Margin/VBoxContainer/Grid/Tickets" to="." method="_on_tickets_value_changed"]
+[connection signal="value_changed" from="Panel/Margin/VBoxContainer/Grid2/Age" to="." method="_on_age_value_changed"]
+[connection signal="value_changed" from="Panel/Margin/VBoxContainer/Grid2/Hunger" to="." method="_on_hunger_value_changed"]
+[connection signal="value_changed" from="Panel/Margin/VBoxContainer/Grid2/MinLevel" to="." method="_on_min_level_value_changed"]
+[connection signal="value_changed" from="Panel/Margin/VBoxContainer/Grid2/SizeModier" to="." method="_on_size_modier_value_changed"]
