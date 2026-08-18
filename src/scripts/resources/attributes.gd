@@ -657,7 +657,6 @@ class HorseAttirbutes extends Attirbute:
 
 			'legStripe' : Color.WHITE,
 			'leg': Color.WEB_GRAY,
-			#'shoulder': Color.WEB_GRAY,
 			'mane' :Color.DIM_GRAY,
 			'fancyMane' :Color.DIM_GRAY,
 			'hoof' : Color.DIM_GRAY,
@@ -679,7 +678,6 @@ class HorseAttirbutes extends Attirbute:
 			
 			'appoloosaSpots' : Color.WHITE,
 			'appoloosaTail' : Color.DIM_GRAY,
-			'appoloosaMane': Color.DIM_GRAY,
 			'pintoSpots' : Color.WHITE,
 			'hornHilite' : Color.WHITE,
 			'horn' : Color.DIM_GRAY,
@@ -698,7 +696,7 @@ class HorseAttirbutes extends Attirbute:
 		'zebraStripes':0,
 		'zebraMane':0,
 		'appoloosaSpots':0,
-		'appoloosaMane':0,
+		'appoloosaTail':0,
 		'pintoSpots':0,
 		'wing':0,
 		'legCly':0,
