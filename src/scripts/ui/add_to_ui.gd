@@ -7,39 +7,6 @@ var type_option : PackedScene = preload("res://ui/type_options.tscn")
 func _ready() -> void:
 	GlobalData.add_to_ui = self
 
-func add_ui_cat():
-	for i in %ColorsData.get_children():
-		i.queue_free()
-		
-	for i in %AttributesData.get_children():
-		i.queue_free()
-		
-	for i in %TypesData.get_children():
-		i.queue_free()
-		
-	for i in Attirbute.CatAttirbutes.cat_base.keys():
-		var spawn = color_box.instantiate()
-		spawn.color_layer = i
-		spawn.color = Attirbute.CatAttirbutes.cat_base[i]
-		%ColorsData.add_child(spawn)
-		
-	for i in Attirbute.CatAttirbutes.cat_colors.keys():
-		var spawn = color_box.instantiate()
-		spawn.color_layer = i
-		spawn.color = Attirbute.CatAttirbutes.cat_colors[i]
-		%ColorsData.add_child(spawn)
-
-	for i in Attirbute.CatAttirbutes.cat_att.keys():
-		if i == 'scale' : continue
-		var spawn = attributes_check.instantiate()
-		spawn.color_layer = i
-		%AttributesData.add_child(spawn)
-
-	for i in Attirbute.CatAttirbutes.pet_types.keys():
-		var spawn = type_option.instantiate()
-		spawn.type_layer = i
-		spawn.populate_option(Attirbute.CatAttirbutes.pet_types)
-		%TypesData.add_child(spawn)
 
 func add_ui_pet(type : GlobalData.PetType):
 	for i in %ColorsData.get_children():

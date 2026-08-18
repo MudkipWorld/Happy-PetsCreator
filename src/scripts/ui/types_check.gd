@@ -6,9 +6,11 @@ var type : String = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Globalsignals.attribute_selected.connect(update_data)
+	#Globalsignals.attribute_selected.connect(update_data)
+	
 	text = type_layer + "_" + type
 
+'''
 func update_data():
 	if DataCreator.selected_data == null or !is_instance_valid(DataCreator.selected_data) : return
 	var test : int = DataCreator.selected_data.types.get(type_layer, []).find(type)
@@ -24,3 +26,4 @@ func _toggled(toggled_on: bool) -> void:
 	else:
 		if data.find(type) != -1:
 			data.erase(type)
+'''
