@@ -540,6 +540,8 @@ class FoxAttirbutes extends Attirbute:
 		'earInner': Color.HOT_PINK,
 		'eyeMask': Color.DIM_GRAY,
 		'earShadow': Color.DIM_GRAY,
+		'noseHilite': Color.WHITE,
+		'footLine': Color.DIM_GRAY,
 		
 		'pupil' : Color.DARK_BLUE,
 		'iris' : Color.BLUE,
@@ -565,7 +567,6 @@ class GuineaPigAttirbutes extends Attirbute:
 	static var base : Dictionary = {
 		'body' : Color.WHITE,
 		'head' : Color.WHITE,
-		'tail' : Color.WHITE,
 		'foot' : Color.WHITE,
 		'nose' : Color.HOT_PINK,
 		'mouth' : Color.DIM_GRAY,
@@ -580,6 +581,8 @@ class GuineaPigAttirbutes extends Attirbute:
 		'belly': Color.YELLOW,
 		'pupil' : Color.DARK_BLUE,
 		'iris' : Color.BLUE,
+		'nostrils': Color.DARK_BLUE,
+		'footlines' : Color.DARK_BLUE,
 		}
 	
 	static var att : Dictionary ={}
@@ -609,6 +612,7 @@ class KangarooAttirbutes extends Attirbute:
 		}
 	
 	static var colors : Dictionary = {
+		'nostrils' : Color.BLUE,
 		'eyeBrow': Color.WHITE,
 		'earInner' : Color.DIM_GRAY,
 		'ear': Color.WHITE,
@@ -675,27 +679,31 @@ class HorseAttirbutes extends Attirbute:
 			
 			'appoloosaSpots' : Color.WHITE,
 			'appoloosaTail' : Color.DIM_GRAY,
+			'appoloosaMane': Color.DIM_GRAY,
 			'pintoSpots' : Color.WHITE,
 			'hornHilite' : Color.WHITE,
 			'horn' : Color.DIM_GRAY,
 			'wing' : Color.DIM_GRAY,
 			'wingHilite': Color.WHITE,
 			
+			'zebraMane': Color.DIM_GRAY,
+			'neckShadow': Color.DIM_GRAY,
+			'noseShadow': Color.DIM_GRAY,
+			
 			'legCly' : Color.WHITE,
 		}
 	
 	static var att : Dictionary ={
-			'zebraStripes' : 0,
-			'appoloosaSpots' : 0,
-
-			'pintoSpots' : 0,
-			'legCly' : 0,
-			'bodySpots' : 0,
-			
-			'fancyMane' : 0,
-			'zebraMane' : 0,
-			'wing' : 0,
-			'horn' : 0,
+		'horn':0,
+		'zebraStripes':0,
+		'zebraMane':0,
+		'appoloosaSpots':0,
+		'appoloosaMane':0,
+		'pintoSpots':0,
+		'wing':0,
+		'legCly':0,
+		'fancyMane':0,
+		'bodySpots':0
 		}
 	
 	static var pet_types : Dictionary = {
