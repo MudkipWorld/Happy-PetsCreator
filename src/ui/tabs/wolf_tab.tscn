@@ -534,6 +534,7 @@ stretch_mode = 5
 
 [node name="Muzzle3" type="TextureRect" parent="Control/Head" unique_id=208593974]
 unique_name_in_owner = true
+self_modulate = Color(0.90326124, 0.92256093, 0.99999803, 1)
 custom_minimum_size = Vector2(400, 400)
 layout_mode = 1
 anchors_preset = 15
