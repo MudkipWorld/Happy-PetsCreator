@@ -153,7 +153,7 @@ class DogAttirbutes extends Attirbute:
 	
 	static var pet_types : Dictionary = {
 			'__form' : ['default', 'small'],
-			'ears'  :  ['default','floppy','pointy','droopy','curly'],
+			'ears'  :  ['default','floppy','pointy','droopy','curly', 'pointysmall'],
 			'tail'  : ['default','stubby','curly', 'fluffy', 'skinny','scruffy'],
 			'body' :  ['default', 'scruffy','curly'],
 		}
@@ -678,6 +678,7 @@ class HorseAttirbutes extends Attirbute:
 			
 			'appoloosaSpots' : Color.WHITE,
 			'appoloosaTail' : Color.DIM_GRAY,
+			'appoloosaMane' : Color.DIM_GRAY,
 			'pintoSpots' : Color.WHITE,
 			'hornHilite' : Color.WHITE,
 			'horn' : Color.DIM_GRAY,
@@ -697,6 +698,7 @@ class HorseAttirbutes extends Attirbute:
 		'zebraMane':0,
 		'appoloosaSpots':0,
 		'appoloosaTail':0,
+		'appoloosaMane':0,
 		'pintoSpots':0,
 		'wing':0,
 		'legCly':0,
