@@ -63,21 +63,22 @@ class CatAttirbutes extends Attirbute:
 		}
 	
 	static var colors : Dictionary = {
-			'earInner' : Color.HOT_PINK,
-			'earOuter' : Color.WHITE,
-			'eyeBrow' : Color.WHITE,
-			
-			'eyeLid' : Color.DARK_SLATE_GRAY,
-			'eyeShadow' : Color.DARK_SLATE_GRAY,
-			'pupil' : Color.DARK_BLUE,
-			'iris' : Color.BLUE,
-			
-			'face' : Color.WHITE,
-			
-			'stripes' : Color.WHITE,
-			'leopardSpots' : Color.WHITE,
-			'calicoSpots1' : Color.WHITE,
-			'calicoSpots2' : Color.WHITE,
+		'tattooStar' : Color(1.0, 1.0, 0.627, 1.0),
+		'earInner' : Color.HOT_PINK,
+		'earOuter' : Color.WHITE,
+		'eyeBrow' : Color.WHITE,
+		
+		'eyeLid' : Color.DARK_SLATE_GRAY,
+		'eyeShadow' : Color.DARK_SLATE_GRAY,
+		'pupil' : Color.DARK_BLUE,
+		'iris' : Color.BLUE,
+		
+		'face' : Color.WHITE,
+		
+		'stripes' : Color.WHITE,
+		'leopardSpots' : Color.WHITE,
+		'calicoSpots1' : Color.WHITE,
+		'calicoSpots2' : Color.WHITE,
 		}
 	
 	static var att : Dictionary ={

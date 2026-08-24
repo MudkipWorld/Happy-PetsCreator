@@ -43,7 +43,7 @@ func checks():
 	%Pattern3.self_modulate = sel_dat.color_layers['leopardSpots'] if sel_dat.attributes['leopardSpots'] else Color.TRANSPARENT
 	%Pattern4.self_modulate = sel_dat.color_layers['leopardSpots'] if sel_dat.attributes['leopardSpots'] else Color.TRANSPARENT
 	%Pattern5.self_modulate = sel_dat.color_layers['stripes'] if sel_dat.attributes['stripes'] else Color.TRANSPARENT
-	%Star.visible = sel_dat.attributes['tattooStar']
+	%Star.self_modulate = sel_dat.color_layers['tattooStar'] if sel_dat.attributes['tattooStar'] else Color.TRANSPARENT
 
 func get_held_item() -> Attirbute:
 	if GlobalData.held_items.size() < 1: return null

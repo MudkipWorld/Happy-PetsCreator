@@ -46,6 +46,7 @@ mouse_filter = 2
 [node name="Tail" type="TextureRect" parent="Control" unique_id=89763832]
 unique_name_in_owner = true
 self_modulate = Color(0.57254905, 0.6392157, 1, 1)
+z_index = -5
 custom_minimum_size = Vector2(400, 400)
 layout_mode = 1
 anchors_preset = 8
