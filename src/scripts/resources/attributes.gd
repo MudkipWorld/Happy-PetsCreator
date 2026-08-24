@@ -154,8 +154,8 @@ class DogAttirbutes extends Attirbute:
 	
 	static var pet_types : Dictionary = {
 			'__form' : ['default', 'small'],
-			'ears'  :  ['default','floppy','pointy','droopy','curly', 'pointysmall'],
-			'tail'  : ['default','stubby','curly', 'fluffy', 'skinny','scruffy'],
+			'ears'  :  ['default','floppy','pointy','droopy','curly', 'long', 'pointysmall'],
+			'tail'  : ['default','stubby','curly', 'fluffy', 'skinny','scruffy', 'shortcurly'],
 			'body' :  ['default', 'scruffy','curly'],
 		}
 	
