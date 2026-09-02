@@ -734,7 +734,7 @@ class KoalaAttirbutes extends Attirbute:
 		'nostrils' : Color.BLUE,
 		'eyeBrow': Color.WHITE,
 		'earInner' : Color.DIM_GRAY,
-		'ear': Color.WHITE,
+		'earOuter': Color.WHITE,
 		'eyeShadow' : Color.DIM_GRAY,
 		'eyeLid': Color.DIM_GRAY,
 		'eyeLine': Color.DIM_GRAY,
@@ -812,6 +812,7 @@ class PigAttirbutes extends Attirbute:
 		'tail' : Color.WHITE,
 		'leg' : Color.WHITE,
 		'toe': Color.WHITE,
+		'foot': Color.WHITE,
 		'nose' : Color.HOT_PINK,
 		'mouth' : Color.DIM_GRAY,
 		}
@@ -874,10 +875,9 @@ class LlamaAttirbutes extends Attirbute:
 		}
 	
 	static var colors : Dictionary = {
-		'nostrils' : Color.BLUE,
 		'eyeBrow': Color.WHITE,
 		'earInner' : Color.DIM_GRAY,
-		'ear': Color.WHITE,
+		'earOuter': Color.WHITE,
 		'eyeShadow' : Color.DIM_GRAY,
 		'eyeLid': Color.DIM_GRAY,
 		'muzzle': Color.YELLOW,
