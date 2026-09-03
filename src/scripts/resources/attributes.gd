@@ -615,6 +615,7 @@ class KangarooAttirbutes extends Attirbute:
 	static var colors : Dictionary = {
 		'nostrils' : Color.BLUE,
 		'eyeBrow': Color.WHITE,
+		'mouthLine' : Color.DIM_GRAY,
 		'earInner' : Color.DIM_GRAY,
 		'ear': Color.WHITE,
 		'eyeShadow' : Color.DIM_GRAY,
@@ -769,19 +770,12 @@ class PlatypusAttirbutes extends Attirbute:
 		'tummy': Color.WHITE,
 		'foot' : Color.WHITE,
 		'footLines': Color.WHITE,
-		'nose' : Color.HOT_PINK,
-		'mouth' : Color.DIM_GRAY,
 		}
 	
 	static var colors : Dictionary = {
 		'nostrils' : Color.BLUE,
-		'eyeBrow': Color.WHITE,
-		'earInner' : Color.DIM_GRAY,
-		'ear': Color.WHITE,
 		'eyeShadow' : Color.DIM_GRAY,
 		'eyeLid': Color.DIM_GRAY,
-		'muzzle': Color.YELLOW,
-		'belly': Color.YELLOW,
 		'cheekLines' : Color.DIM_GRAY,
 		'pupil' : Color.DARK_BLUE,
 		'iris' : Color.BLUE,
@@ -790,7 +784,6 @@ class PlatypusAttirbutes extends Attirbute:
 		'beakLower': Color.DIM_GRAY,
 		'bodyStripe': Color.DIM_GRAY,
 		'eyeBack': Color.DIM_GRAY,
-		
 		}
 	
 	static var att : Dictionary = {}
