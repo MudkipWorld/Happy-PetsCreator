@@ -944,3 +944,371 @@ class TurkeyAttirbutes extends Attirbute:
 		base_layers = base.duplicate(true)
 		color_layers.merge(colors, true)
 		attributes.merge(att, true)
+
+class CowAttirbutes extends Attirbute:
+	
+	static var base : Dictionary = {
+		'body' : Color.WHITE,
+		'head' : Color.WHITE,
+		'neck' : Color.WHITE,
+		'leg' : Color.WHITE,
+		'tail' : Color.WHITE,
+		'hoof' : Color.DIM_GRAY,
+		'muzzle' : Color.LIGHT_PINK,
+		'nose' : Color.HOT_PINK,
+		'mouth' : Color.DIM_GRAY,
+		}
+	
+	static var colors : Dictionary = {
+		'earInner' : Color.HOT_PINK,
+		'earOuter' : Color.WHITE,
+		'eyeSocket' : Color.WHITE,
+		'eyeWhite' : Color.WHITE,
+		'eyeHilite' : Color.WHITE,
+		'eyeLash' : Color.BLACK,
+		'eyeShadow' : Color.DIM_GRAY,
+		'pupil' : Color.BLACK,
+		'iris' : Color.BLUE,
+		
+		'hair' : Color.WHITE,
+		'tailHair' : Color.WHITE,
+		'jaw' : Color.WHITE,
+		'noseBridge' : Color.LIGHT_PINK,
+		'noseLight' : Color.PINK,
+		'mouthInner' : Color.DARK_RED,
+		'hoofDark' : Color.DARK_SLATE_GRAY,
+		'horn' : Color.BISQUE,
+		'udder' : Color.PINK,
+		
+		'spots' : Color.BLACK,
+		'star' : Color.WHITE,
+		'headSpot' : Color.WHITE,
+		}
+	
+	static var att : Dictionary = {
+		'spots' : 0,
+		'star' : 0,
+		'headSpot' : 0,
+		}
+	
+	static var pet_types : Dictionary = {
+			'__form' : ['default'],
+			'headSpotType' : ['default', 'star'],
+		}
+	
+	func _init() -> void:
+		base_layers = base.duplicate(true)
+		color_layers.merge(colors, true)
+		attributes.merge(att, true)
+		
+		types = {
+			'__form' : ['default'],
+			'headSpotType' : ['default'],
+		}
+
+class BullAttirbutes extends Attirbute:
+	
+	static var base : Dictionary = {
+		'body' : Color.SADDLE_BROWN,
+		'head' : Color.SADDLE_BROWN,
+		'neck' : Color.SADDLE_BROWN,
+		'leg' : Color.SADDLE_BROWN,
+		'tail' : Color.SADDLE_BROWN,
+		'hoof' : Color.DIM_GRAY,
+		'muzzle' : Color.ROSY_BROWN,
+		'nose' : Color.DIM_GRAY,
+		'mouth' : Color.DIM_GRAY,
+		}
+	
+	static var colors : Dictionary = {
+		'earInner' : Color.HOT_PINK,
+		'earOuter' : Color.SADDLE_BROWN,
+		'eyeSocket' : Color.SADDLE_BROWN,
+		'eyeWhite' : Color.WHITE,
+		'eyeHilite' : Color.WHITE,
+		'eyeLash' : Color.BLACK,
+		'eyeShadow' : Color.DIM_GRAY,
+		'pupil' : Color.BLACK,
+		'iris' : Color.BLUE,
+		
+		'hair' : Color.SADDLE_BROWN,
+		'tailHair' : Color.DARK_SLATE_GRAY,
+		'jaw' : Color.SADDLE_BROWN,
+		'noseBridge' : Color.ROSY_BROWN,
+		'noseLight' : Color.GRAY,
+		'mouthInner' : Color.DARK_RED,
+		'hoofDark' : Color.DARK_SLATE_GRAY,
+		'horn' : Color.BISQUE,
+		
+		'spots' : Color.WHITE,
+		'star' : Color.WHITE,
+		'headSpot' : Color.WHITE,
+		}
+	
+	static var att : Dictionary = {
+		'spots' : 0,
+		'star' : 0,
+		'headSpot' : 0,
+		}
+	
+	static var pet_types : Dictionary = {
+			'__form' : ['default'],
+			'headSpotType' : ['default', 'star'],
+		}
+	
+	func _init() -> void:
+		base_layers = base.duplicate(true)
+		color_layers.merge(colors, true)
+		attributes.merge(att, true)
+		
+		types = {
+			'__form' : ['default'],
+			'headSpotType' : ['default'],
+		}
+
+class ChickenAttirbutes extends Attirbute:
+	
+	static var base : Dictionary = {
+		'body' : Color.WHITE,
+		'head' : Color.WHITE,
+		'wing' : Color.WHITE,
+		'tail' : Color.WHITE,
+		'leg' : Color.ORANGE,
+		'foot' : Color.ORANGE,
+		'beakTop' : Color.ORANGE,
+		'comb' : Color.RED,
+		}
+	
+	static var colors : Dictionary = {
+		'beakLower' : Color.DARK_ORANGE,
+		'beakShadow' : Color.DARK_ORANGE,
+		'eyeBrow' : Color.WHITE,
+		'eyeLid' : Color.DIM_GRAY,
+		'eyeShadow' : Color.DIM_GRAY,
+		'eyeWhite' : Color.WHITE,
+		'pupil' : Color.BLACK,
+		'iris' : Color.BLUE,
+		
+		'wingFeathers' : Color.LIGHT_GRAY,
+		'legLower' : Color.ORANGE,
+		'footToe' : Color.DARK_ORANGE,
+		'hilight' : Color.WHITE,
+		}
+	
+	static var att : Dictionary = {}
+	
+	static var pet_types : Dictionary = {
+			'__form' : ['default'],
+		}
+	
+	func _init() -> void:
+		base_layers = base.duplicate(true)
+		color_layers.merge(colors, true)
+		attributes.merge(att, true)
+
+class GoatAttirbutes extends Attirbute:
+	
+	static var base : Dictionary = {
+		'body' : Color.WHITE,
+		'head' : Color.WHITE,
+		'neck' : Color.WHITE,
+		'leg' : Color.WHITE,
+		'lowerLeg' : Color.WHITE,
+		'tail' : Color.WHITE,
+		'hoof' : Color.DIM_GRAY,
+		'muzzle' : Color.LIGHT_PINK,
+		'mouth' : Color.DIM_GRAY,
+		}
+	
+	static var colors : Dictionary = {
+		'earInner' : Color.HOT_PINK,
+		'earOuter' : Color.WHITE,
+		'eyeBack' : Color.LIGHT_GRAY,
+		'eyeShadow' : Color.DIM_GRAY,
+		'pupil' : Color.BLACK,
+		'iris' : Color.GOLD,
+		
+		'footFur' : Color.WHITE,
+		'headFluff' : Color.WHITE,
+		'hoofLine' : Color.DARK_SLATE_GRAY,
+		'hornMain' : Color.BISQUE,
+		'hornBottom' : Color.TAN,
+		'hornLine' : Color.PERU,
+		'beard' : Color.WHITE,
+		
+		'spots' : Color.SADDLE_BROWN,
+		'splotch' : Color.SADDLE_BROWN,
+		'tummy' : Color.WHITE,
+		'backStripe' : Color.SADDLE_BROWN,
+		'tailBottom' : Color.WHITE,
+		'tailTip' : Color.SADDLE_BROWN,
+		}
+	
+	static var att : Dictionary = {
+		'spots' : 0,
+		'splotch' : 0,
+		'tummy' : 0,
+		'backStripe' : 0,
+		'tailBottom' : 0,
+		'tailTip' : 0,
+		'earDown' : 0,
+		'scruffy' : 0,
+		}
+	
+	static var pet_types : Dictionary = {
+			'__form' : ['default'],
+			'horn' : ['default', 'horn1', 'horn2', 'horn3', 'horn4', 'horn5', 'horn6', 'horn7', 'horn8', 'none'],
+			'beardType' : ['default', 'medium', 'long', 'none'],
+			'tailType' : ['default', 'middle', 'down'],
+			'earUp' : ['default', 'long'],
+		}
+	
+	func _init() -> void:
+		base_layers = base.duplicate(true)
+		color_layers.merge(colors, true)
+		attributes.merge(att, true)
+		
+		types = {
+			'__form' : ['default'],
+			'horn' : ['default'],
+			'beardType' : ['default'],
+			'tailType' : ['default'],
+			'earUp' : ['default'],
+		}
+
+class SheepAttirbutes extends Attirbute:
+	
+	static var base : Dictionary = {
+		'body' : Color.WHITE,
+		'head' : Color.WHITE,
+		'neck' : Color.WHITE,
+		'leg' : Color.WHITE,
+		'lowerLeg' : Color.WHITE,
+		'tail' : Color.WHITE,
+		'fluff' : Color.WHITE_SMOKE,
+		'hoof' : Color.DIM_GRAY,
+		'muzzle' : Color.LIGHT_PINK,
+		'mouth' : Color.DIM_GRAY,
+		}
+	
+	static var colors : Dictionary = {
+		'earInner' : Color.HOT_PINK,
+		'earOuter' : Color.WHITE,
+		'eyeBack' : Color.LIGHT_GRAY,
+		'eyeShadow' : Color.DIM_GRAY,
+		'pupil' : Color.BLACK,
+		'iris' : Color.GOLD,
+		
+		'footFur' : Color.WHITE,
+		'headFluff' : Color.WHITE_SMOKE,
+		'hoofLine' : Color.DARK_SLATE_GRAY,
+		'hornMain' : Color.BISQUE,
+		'hornBottom' : Color.TAN,
+		'hornLine' : Color.PERU,
+		'wig' : Color.WHITE_SMOKE,
+		
+		'spots' : Color.DIM_GRAY,
+		'splotch' : Color.DIM_GRAY,
+		'tummy' : Color.WHITE,
+		'tattoo' : Color.DIM_GRAY,
+		}
+	
+	static var att : Dictionary = {
+		'spots' : 0,
+		'splotch' : 0,
+		'tummy' : 0,
+		'scruffy' : 0,
+		}
+	
+	static var pet_types : Dictionary = {
+			'__form' : ['default'],
+			'horn' : ['default', 'horn1', 'horn2', 'horn3', 'horn4', 'horn5', 'horn6', 'horn7', 'horn8', 'horn9', 'horn10'],
+			'tailType' : ['default', 'middle', 'down'],
+			'earUp' : ['default', 'long'],
+			'tatoo' : ['default', 'aries'],
+		}
+	
+	func _init() -> void:
+		base_layers = base.duplicate(true)
+		color_layers.merge(colors, true)
+		attributes.merge(att, true)
+		
+		types = {
+			'__form' : ['default'],
+			'horn' : ['default'],
+			'tailType' : ['default'],
+			'earUp' : ['default'],
+			'tatoo' : ['default'],
+		}
+
+class DonkeyAttirbutes extends Attirbute:
+	
+	static var base : Dictionary = {
+		'body' : Color.GRAY,
+		'face' : Color.GRAY,
+		'leg' : Color.GRAY,
+		'tail' : Color.DIM_GRAY,
+		'hoof' : Color.DIM_GRAY,
+		'nose' : Color.LIGHT_GRAY,
+		'mouth' : Color.DIM_GRAY,
+		}
+	
+	static var colors : Dictionary = {
+		'tummy' : Color.WHITE_SMOKE,
+		'muzzle' : Color.WHITE_SMOKE,
+		'cheek' : Color.WHITE_SMOKE,
+		'neck' : Color.GRAY,
+		'neckShadow' : Color.DIM_GRAY,
+		'legStripe' : Color.WHITE,
+		'mane' : Color.DIM_GRAY,
+		'tailEnd' : Color.DIM_GRAY,
+		'hoofHilite' : Color.DARK_SLATE_GRAY,
+		'noseShadow' : Color.GRAY,
+		
+		'earInner' : Color.HOT_PINK,
+		'earOuter' : Color.GRAY,
+		'earTip' : Color.DIM_GRAY,
+		'eyeBrow' : Color.WHITE,
+		'eyeLash' : Color.BLACK,
+		'eyeWhite' : Color.WHITE,
+		'eyeLid' : Color.DARK_SLATE_GRAY,
+		'eyeShadow' : Color.DARK_SLATE_GRAY,
+		'pupil' : Color.BLACK,
+		'iris' : Color.SADDLE_BROWN,
+		
+		'faceStripe' : Color.WHITE_SMOKE,
+		'zebraStripes' : Color.WHITE,
+		'zebraMane' : Color.DIM_GRAY,
+		'appoloosaSpots' : Color.WHITE,
+		'appoloosaTail' : Color.DIM_GRAY,
+		'appoloosaMane' : Color.DIM_GRAY,
+		'pintoSpots' : Color.WHITE,
+		'horn' : Color.DIM_GRAY,
+		'hornHilite' : Color.WHITE,
+		'wing' : Color.DIM_GRAY,
+		'wingHilite' : Color.WHITE,
+		'bowLight' : Color.PINK,
+		'bowDark' : Color.DEEP_PINK,
+		}
+	static var att : Dictionary = {
+		'tummy' : 1,
+		'mane' : 1,
+		'zebraStripes' : 0,
+		'zebraMane' : 0,
+		'appoloosaSpots' : 0,
+		'appoloosaTail' : 0,
+		'appoloosaMane' : 0,
+		'pintoSpots' : 0,
+		'horn' : 0,
+		'wing' : 0,
+		'bow' : 0,
+		}
+	
+	static var pet_types : Dictionary = {
+			'__form' : ['default'],
+		}
+	
+	func _init() -> void:
+		base_layers = base.duplicate(true)
+		color_layers.merge(colors, true)
+		attributes.merge(att, true)

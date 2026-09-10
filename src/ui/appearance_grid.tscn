@@ -10,6 +10,14 @@
 [ext_resource type="PackedScene" uid="uid://6a0rcm4hece0" path="res://ui/tabs/reindeer_tab.tscn" id="8_v1cjv"]
 [ext_resource type="PackedScene" uid="uid://dq784337pfghw" path="res://ui/tabs/triceratops_tab.tscn" id="9_bqrgr"]
 
+[ext_resource type="PackedScene" uid="uid://ajfyzu3dgey2n" path="res://ui/tabs/pig_tab.tscn" id="10_si0w5"]
+[ext_resource type="PackedScene" uid="uid://c89m63c2u009f" path="res://ui/tabs/llama_tab.tscn" id="11_v0e6e"]
+[ext_resource type="PackedScene" uid="uid://ac4r19jv1wf5j" path="res://ui/tabs/turkey_tab.tscn" id="12_ivtec"]
+
+[ext_resource type="PackedScene" uid="uid://ayhb8uy86rhcq" path="res://ui/tabs/chicken_tab.tscn" id="13_vc0xk"]
+
+[ext_resource type="PackedScene" uid="uid://b1bj3nxlco0ph" path="res://ui/tabs/cow_tab.tscn" id="14_d3f77"]
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aekvq"]
 
 [node name="AppearanceGrid" type="VBoxContainer" unique_id=1624301966]
@@ -77,7 +85,32 @@ visible = false
 layout_mode = 2
 metadata/_tab_index = 7
 
-[node name="Placeholder" type="VBoxContainer" parent="PetsReferences" unique_id=2123062040]
+[node name="PigTab" parent="PetsReferences" unique_id=985047515 instance=ExtResource("10_si0w5")]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 8
+
+[node name="LlamaTab" parent="PetsReferences" unique_id=683091686 instance=ExtResource("11_v0e6e")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 9
+
+[node name="TurkeyTab" parent="PetsReferences" unique_id=2071080606 instance=ExtResource("12_ivtec")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 10
+
+[node name="ChickenTab" parent="PetsReferences" unique_id=1613507093 instance=ExtResource("13_vc0xk")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 11
+
+[node name="CowTab" parent="PetsReferences" unique_id=1299887781 instance=ExtResource("14_d3f77")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 12
+
+[node name="Placeholder" type="VBoxContainer" parent="PetsReferences" unique_id=2123062040]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 13
