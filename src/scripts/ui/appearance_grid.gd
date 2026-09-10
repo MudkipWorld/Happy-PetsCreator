@@ -23,5 +23,15 @@ func show_pet_reference(type : GlobalData.PetType):
 			%PetsReferences.current_tab = 6
 		GlobalData.PetType.Triceratops:
 			%PetsReferences.current_tab = 7
-		_:
+		GlobalData.PetType.Pig:
 			%PetsReferences.current_tab = 8
+		GlobalData.PetType.Llama:
+			%PetsReferences.current_tab = 9
+		GlobalData.PetType.Turkey:
+			%PetsReferences.current_tab = 10
+		GlobalData.PetType.Chicken:
+			%PetsReferences.current_tab = 11
+		GlobalData.PetType.Cow:
+			%PetsReferences.current_tab = 12
+		_:
+			%PetsReferences.current_tab = 13

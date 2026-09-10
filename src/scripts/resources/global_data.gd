@@ -18,7 +18,13 @@ enum PetType {
 	Platypus,
 	Koala,
 	Llama,
-	Turkey
+	Turkey,
+	Cow,
+	Bull,
+	Chicken,
+	Goat,
+	Sheep,
+	Donkey
 }
 
 static var pet_map : Dictionary[GlobalData.PetType, Dictionary] = {
@@ -42,6 +48,13 @@ static var pet_map : Dictionary[GlobalData.PetType, Dictionary] = {
 	PetType.Koala : {'attribute' : Attirbute.KoalaAttirbutes, 'pets_data' : [], 'name' : 'koala'},
 	PetType.Llama : {'attribute' : Attirbute.LlamaAttirbutes, 'pets_data' : [], 'name' : 'llama'},
 	PetType.Turkey : {'attribute' : Attirbute.TurkeyAttirbutes, 'pets_data' : [], 'name' : 'turkey'},
+	
+	PetType.Cow : {'attribute' : Attirbute.CowAttirbutes, 'pets_data' : [], 'name' : 'cow'},
+	PetType.Bull : {'attribute' : Attirbute.BullAttirbutes, 'pets_data' : [], 'name' : 'bull'},
+	PetType.Chicken : {'attribute' : Attirbute.ChickenAttirbutes, 'pets_data' : [], 'name' : 'chicken'},
+	PetType.Goat : {'attribute' : Attirbute.GoatAttirbutes, 'pets_data' : [], 'name' : 'goat'},
+	PetType.Sheep : {'attribute' : Attirbute.SheepAttirbutes, 'pets_data' : [], 'name' : 'sheep'},
+	PetType.Donkey : {'attribute' : Attirbute.DonkeyAttirbutes, 'pets_data' : [], 'name' : 'donkey'},
 	
 }
 
