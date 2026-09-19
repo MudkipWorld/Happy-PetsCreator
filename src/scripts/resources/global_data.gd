@@ -24,7 +24,10 @@ enum PetType {
 	Chicken,
 	Goat,
 	Sheep,
-	Donkey
+	Donkey,
+	Alien,
+	Monster,
+	Bat
 }
 
 static var pet_map : Dictionary[GlobalData.PetType, Dictionary] = {
@@ -56,6 +59,9 @@ static var pet_map : Dictionary[GlobalData.PetType, Dictionary] = {
 	PetType.Sheep : {'attribute' : Attirbute.SheepAttirbutes, 'pets_data' : [], 'name' : 'sheep'},
 	PetType.Donkey : {'attribute' : Attirbute.DonkeyAttirbutes, 'pets_data' : [], 'name' : 'donkey'},
 	
+	PetType.Alien : {'attribute' : Attirbute.AlienAttirbutes, 'pets_data' : [], 'name' : 'alien'},
+	PetType.Monster : {'attribute' : Attirbute.MonsterAttirbutes, 'pets_data' : [], 'name' : 'monster'},
+	PetType.Bat : {'attribute' : Attirbute.BatAttirbutes, 'pets_data' : [], 'name' : 'bat'},
 }
 
 static var add_to_ui : Node

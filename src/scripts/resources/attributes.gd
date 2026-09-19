@@ -1312,3 +1312,156 @@ class DonkeyAttirbutes extends Attirbute:
 		base_layers = base.duplicate(true)
 		color_layers.merge(colors, true)
 		attributes.merge(att, true)
+
+class BatAttirbutes extends Attirbute:
+	
+	static var base : Dictionary = {
+		'body' : Color.WHITE,
+		'head' : Color.WHITE,
+		'tail' : Color.WHITE,
+		'leg' : Color.WHITE,
+		'foot' : Color.WHITE,
+		'nose' : Color.HOT_PINK,
+		'mouth' : Color.DIM_GRAY,
+		'toe' : Color.DIM_GRAY,
+		}
+	
+	static var colors : Dictionary = {
+		'brow': Color.WHITE,
+		'earOuter': Color.WHITE,
+		'eyeShadow' : Color.DIM_GRAY,
+		'eyeLid': Color.DIM_GRAY,
+		'eyeLine': Color.DIM_GRAY,
+		'eyeDark': Color.DIM_GRAY,
+		'earInner': Color.HOT_PINK,
+		'earShadow': Color.DIM_GRAY,
+		
+		'pupil' : Color.DARK_BLUE,
+		'iris' : Color.BLUE,
+		'wingFront': Color.WHITE,
+		'wingFrontDetail': Color.WHITE,
+		'nostrilLight': Color.WHITE,
+		'nostrilDark': Color.WHITE,
+		'wingBackDetail': Color.WHITE,
+		'wingBack': Color.DIM_GRAY,
+		'fang'  : Color.WHITE,
+		'tongue'  : Color.HOT_PINK,
+		'mouthCrease'  : Color.WHITE,
+		}
+	
+	static var att : Dictionary ={}
+	
+	static var pet_types : Dictionary = {
+			'__form' : ['default'],
+		}
+	
+	func _init() -> void:
+		base_layers = base.duplicate(true)
+		color_layers.merge(colors, true)
+		attributes.merge(att, true)
+
+class MonsterAttirbutes extends Attirbute:
+	
+	static var base : Dictionary = {
+		'body' : Color.WHITE,
+		'head' : Color.WHITE,
+		'tail' : Color.WHITE,
+		'leg' : Color.WHITE,
+		'foot' : Color.WHITE,
+		'ankle' : Color.WHITE,
+		'nose' : Color.HOT_PINK,
+		'mouth' : Color.DIM_GRAY,
+		'toeDark' : Color.DIM_GRAY,
+		'toe' : Color.DIM_GRAY,
+		}
+	
+	static var colors : Dictionary = {
+		'brow': Color.WHITE,
+		'ear': Color.WHITE,
+		'eyeShad' : Color.DIM_GRAY,
+		'eyeLid': Color.DIM_GRAY,
+		'eyeDark': Color.DIM_GRAY,
+		'eyeWhite': Color.WHITE,
+		'eyeHilite': Color.WHITE,
+		'earInner': Color.HOT_PINK,
+		'noseHilite': Color.WHITE,
+		'bodySpot' : Color.DIM_GRAY,
+		'tailLight': Color.WHITE,
+		'spots': Color.DIM_GRAY,
+		'tooth': Color.WHITE,
+		'cheek' : Color.WHITE,
+		'crease' : Color.DIM_GRAY,
+		'tongue' : Color.HOT_PINK,
+		
+		'pupil' : Color.DARK_BLUE,
+		'iris' : Color.BLUE,
+		}
+	
+	static var att : Dictionary ={}
+	
+	static var pet_types : Dictionary = {
+			'__form' : ['default'],
+			'spotType' : ["spots","default","heart"]
+		}
+	
+	func _init() -> void:
+		base_layers = base.duplicate(true)
+		color_layers.merge(colors, true)
+		attributes.merge(att, true)
+
+class AlienAttirbutes extends Attirbute:
+	
+	static var base : Dictionary = {
+		'body' : Color.WHITE,
+		'head' : Color.WHITE,
+		'tail' : Color.WHITE,
+		'leg' : Color.WHITE,
+		'foot' : Color.WHITE,
+		'nose' : Color.HOT_PINK,
+		'mouth' : Color.DIM_GRAY,
+		}
+	
+	static var colors : Dictionary = {
+		'eyeBrow': Color.WHITE,
+		'antennaeEnd': Color.WHITE,
+		'antennaeStalk': Color.WHITE,
+		'eyeShadow' : Color.DIM_GRAY,
+		'eyeLid': Color.DIM_GRAY,
+		'eyeLine': Color.DIM_GRAY,
+		'eyeDark': Color.DIM_GRAY,
+		'earInner': Color.HOT_PINK,
+		'eyeMask': Color.DIM_GRAY,
+		'earShadow': Color.DIM_GRAY,
+		'tailTip': Color.WHITE,
+		'footLines': Color.DIM_GRAY,
+		
+		'crestDark': Color.DIM_GRAY,
+		'crestLight': Color.WHITE,
+		
+		'star': Color.DIM_GRAY,
+		'circle': Color.DIM_GRAY,
+		'splatter': Color.DIM_GRAY,
+		'stripes': Color.DIM_GRAY,
+		'bigStripe': Color.DIM_GRAY,
+		
+		'pupil' : Color.DARK_BLUE,
+		'iris' : Color.BLUE,
+		'chest'  : Color.WHITE,
+		}
+
+	static var att : Dictionary ={}
+	
+	static var pet_types : Dictionary = {
+			'__form' : ['default'],
+			 "shapeHead":["default","fluffy","hairy"],
+			 "shapeTummy":["default","fluffy","hairy"],
+			 "shapeAntennae":["default","heart","star"],
+			 "shapeEarOuter":["default","side","aquatic","tube","small","pointy"],
+			 "shapeTail":["default","bunny","wiggly","swirl","mace","comb"],
+			 "shapeCrestDark":["default","pointy","curvy"]
+		}
+
+	func _init() -> void:
+		base_layers = base.duplicate(true)
+		color_layers.merge(colors, true)
+		attributes.merge(att, true)
