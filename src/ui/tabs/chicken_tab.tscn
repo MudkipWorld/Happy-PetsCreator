@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://cpf585camm02s" path="res://assets/placeholder/chicken/Mouth.png" id="7_cfguh"]
 [ext_resource type="Texture2D" uid="uid://d3o1akboh5q7p" path="res://assets/placeholder/chicken/Top Beak.png" id="8_pc5hg"]
 [ext_resource type="Texture2D" uid="uid://0v388akbmwmv" path="res://assets/placeholder/chicken/Eye Whites.png" id="9_28szc"]
-[ext_resource type="Texture2D" uid="uid://pumxjgjixxfo" path="res://assets/placeholder/chicken/Iris.png" id="10_552wu"]
 [ext_resource type="Texture2D" uid="uid://cajlnm0x3x4a1" path="res://assets/placeholder/chicken/Pupil.png" id="11_7demf"]
 [ext_resource type="Texture2D" uid="uid://s2hsqlrnn4gl" path="res://assets/placeholder/chicken/Eye Shine.png" id="12_s4hgw"]
 [ext_resource type="Texture2D" uid="uid://cu3us1nmdogbi" path="res://assets/placeholder/chicken/Eyeshadow.png" id="13_bkrnm"]
@@ -21,6 +20,8 @@
 [ext_resource type="Texture2D" uid="uid://d154kgbe0v5e1" path="res://assets/placeholder/chicken/Hindleg.png" id="19_9465y"]
 [ext_resource type="Texture2D" uid="uid://b87wwyukl6dvi" path="res://assets/placeholder/chicken/Wing.png" id="20_z64kd"]
 [ext_resource type="Texture2D" uid="uid://d1huql60a5c0m" path="res://assets/placeholder/chicken/Wing Dark.png" id="21_sckr5"]
+[ext_resource type="Texture2D" uid="uid://bxoc1e2uyrpds" path="res://assets/placeholder/chicken/IrisEye1.png" id="22_iris1"]
+[ext_resource type="Texture2D" uid="uid://bdx84oe2bsl7t" path="res://assets/placeholder/chicken/IrisEye2.png" id="23_iris2"]
 
 [node name="ChickenTab" type="VBoxContainer" unique_id=623322336]
 anchors_preset = 15
@@ -172,6 +173,21 @@ texture = ExtResource("9_28szc")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head" unique_id=1270250740]
+unique_name_in_owner = true
+self_modulate = Color(0, 0, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("23_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head" unique_id=2000809254]
 unique_name_in_owner = true
 self_modulate = Color(0, 0, 1, 1)
@@ -183,7 +199,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("10_552wu")
+texture = ExtResource("22_iris1")
 expand_mode = 1
 stretch_mode = 5
 

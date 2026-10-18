@@ -16,9 +16,10 @@
 [ext_resource type="Texture2D" uid="uid://djlcdque0qa4w" path="res://assets/placeholder/dog/Eyebrows.png" id="12_3pvg0"]
 [ext_resource type="Texture2D" uid="uid://3v8fqakh3rkr" path="res://assets/placeholder/dog/Eyeline.png" id="13_u6kju"]
 [ext_resource type="Texture2D" uid="uid://utmltkk5siyv" path="res://assets/placeholder/dog/Eyewhite.png" id="14_mx6wc"]
-[ext_resource type="Texture2D" uid="uid://c4tvsm5uw4txv" path="res://assets/placeholder/dog/Iris.png" id="15_4uvpg"]
 [ext_resource type="Texture2D" uid="uid://curef40l6840d" path="res://assets/placeholder/dog/Pupil.png" id="16_qj70b"]
 [ext_resource type="Texture2D" uid="uid://dc3e4wk0h2xkp" path="res://assets/placeholder/dog/EyeShine.png" id="17_sb54k"]
+[ext_resource type="Texture2D" uid="uid://bimfu6wdqkilx" path="res://assets/placeholder/dog/IrisEye1.png" id="18_iris1"]
+[ext_resource type="Texture2D" uid="uid://dngs3y32q821l" path="res://assets/placeholder/dog/IrisEye2.png" id="19_iris2"]
 
 [node name="DogTab" type="VBoxContainer" unique_id=170270603]
 anchors_preset = 15
@@ -287,6 +288,21 @@ texture = ExtResource("14_mx6wc")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head" unique_id=1675697314]
+unique_name_in_owner = true
+self_modulate = Color(0.8002418, 0.668927, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("19_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head" unique_id=1147742619]
 unique_name_in_owner = true
 self_modulate = Color(0.8002418, 0.668927, 0, 1)
@@ -298,7 +314,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("15_4uvpg")
+texture = ExtResource("18_iris1")
 expand_mode = 1
 stretch_mode = 5
 

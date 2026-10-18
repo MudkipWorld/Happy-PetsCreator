@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://ca3xy420fhn4e" path="res://assets/placeholder/turkey/Snood.png" id="9_waw0g"]
 [ext_resource type="Texture2D" uid="uid://dpv7f4ei0gens" path="res://assets/placeholder/turkey/Eyeline.png" id="10_x9asj"]
 [ext_resource type="Texture2D" uid="uid://dn1ao4lvjaat7" path="res://assets/placeholder/turkey/EyeWhite.png" id="11_vuexc"]
-[ext_resource type="Texture2D" uid="uid://chfo3gu4f6nov" path="res://assets/placeholder/turkey/Iris.png" id="12_8luz2"]
 [ext_resource type="Texture2D" uid="uid://c1owqg0vke1nw" path="res://assets/placeholder/turkey/Pupil.png" id="13_7bpxn"]
 [ext_resource type="Texture2D" uid="uid://c8wbueeooqvc8" path="res://assets/placeholder/turkey/EyeShine.png" id="14_pktfb"]
 [ext_resource type="Texture2D" uid="uid://dq2qijboygmac" path="res://assets/placeholder/turkey/Brows.png" id="15_gbct9"]
@@ -19,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://bwvgmwxyfl7r5" path="res://assets/placeholder/turkey/Wing.png" id="17_wq6g2"]
 [ext_resource type="Texture2D" uid="uid://bl2dbqx2aswpe" path="res://assets/placeholder/turkey/Wing Lines.png" id="18_v46vl"]
 [ext_resource type="Texture2D" uid="uid://cfo4x2x60qrta" path="res://assets/placeholder/turkey/Wing Light.png" id="19_utqbi"]
+[ext_resource type="Texture2D" uid="uid://dwc6bwwwcvqxa" path="res://assets/placeholder/turkey/IrisEye1.png" id="20_iris1"]
+[ext_resource type="Texture2D" uid="uid://o0ynhskckaay" path="res://assets/placeholder/turkey/IrisEye2.png" id="21_iris2"]
 
 [node name="TurkeyTab" type="VBoxContainer" unique_id=660454741]
 anchors_preset = 15
@@ -217,6 +218,21 @@ texture = ExtResource("11_vuexc")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head" unique_id=992443133]
+unique_name_in_owner = true
+self_modulate = Color(0, 0, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("21_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head" unique_id=1975161159]
 unique_name_in_owner = true
 self_modulate = Color(0, 0, 1, 1)
@@ -228,7 +244,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("12_8luz2")
+texture = ExtResource("20_iris1")
 expand_mode = 1
 stretch_mode = 5
 

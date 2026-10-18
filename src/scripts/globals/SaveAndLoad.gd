@@ -124,6 +124,7 @@ func load_common(item : Dictionary, c_data : Attirbute) -> Dictionary:
 	
 	c_data.base_layers.merge(base_colors, true)
 	c_data.color_layers.merge(color_layers, true)
+	c_data.attributes['heterochromia'] = 1 if color_layers.has('iris2') else 0
 	
 	var final_data : Dictionary = {
 		'name' : item.get('name', 'Placeholder'),

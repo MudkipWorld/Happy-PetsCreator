@@ -29,6 +29,7 @@ func recolor_part():
 	
 	%Eyeline.self_modulate = selected_data.color_layers['eyeShad']
 	%Iris.self_modulate = selected_data.color_layers['iris']
+	%Iris2.self_modulate = selected_data.iris2_color()
 	%Pupil.self_modulate = selected_data.color_layers['pupil']
 	
 	%Bib.self_modulate = selected_data.color_layers['bib']

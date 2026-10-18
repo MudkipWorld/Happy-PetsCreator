@@ -18,9 +18,10 @@
 [ext_resource type="Texture2D" uid="uid://dxvnjoidagmcu" path="res://assets/placeholder/corgi/Eyebrows.png" id="16_jq8mp"]
 [ext_resource type="Texture2D" uid="uid://c88675i6ds77x" path="res://assets/placeholder/corgi/EyeShadow.png" id="17_njltk"]
 [ext_resource type="Texture2D" uid="uid://cnkfkfjlwmpmr" path="res://assets/placeholder/corgi/EyeWhite.png" id="18_mg1bf"]
-[ext_resource type="Texture2D" uid="uid://djc8s15gsuq1s" path="res://assets/placeholder/corgi/Iris.png" id="19_m23po"]
 [ext_resource type="Texture2D" uid="uid://bv6sloswnqryb" path="res://assets/placeholder/corgi/Pupil.png" id="20_a6exv"]
 [ext_resource type="Texture2D" uid="uid://ldb4jhwmk2ep" path="res://assets/placeholder/corgi/EyeShine.png" id="21_l75je"]
+[ext_resource type="Texture2D" uid="uid://b7wtxu7gnd76h" path="res://assets/placeholder/corgi/IrisEye1.png" id="22_iris1"]
+[ext_resource type="Texture2D" uid="uid://c6311tdale14t" path="res://assets/placeholder/corgi/IrisEye2.png" id="23_iris2"]
 
 [node name="CorgiTab" type="VBoxContainer" unique_id=170270603]
 anchors_preset = 15
@@ -328,6 +329,21 @@ texture = ExtResource("18_mg1bf")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head" unique_id=610110800]
+unique_name_in_owner = true
+self_modulate = Color(0.8002418, 0.668927, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("23_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head" unique_id=1147742619]
 unique_name_in_owner = true
 self_modulate = Color(0.8002418, 0.668927, 0, 1)
@@ -339,7 +355,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("19_m23po")
+texture = ExtResource("22_iris1")
 expand_mode = 1
 stretch_mode = 5
 

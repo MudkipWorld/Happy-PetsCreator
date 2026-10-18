@@ -18,11 +18,12 @@
 [ext_resource type="Texture2D" uid="uid://bhk8advtp5r8r" path="res://assets/placeholder/yorkie/Mouth.png" id="16_ocjq4"]
 [ext_resource type="Texture2D" uid="uid://dgh83uj7vjq4s" path="res://assets/placeholder/yorkie/Brows.png" id="17_bkaac"]
 [ext_resource type="Texture2D" uid="uid://bx3vmly8h5eog" path="res://assets/placeholder/yorkie/Eye Whites.png" id="18_foe0r"]
-[ext_resource type="Texture2D" uid="uid://dcrcsnt5mf4il" path="res://assets/placeholder/yorkie/Iris.png" id="19_bxsrn"]
 [ext_resource type="Texture2D" uid="uid://cgge08kyo0u1k" path="res://assets/placeholder/yorkie/Pupil.png" id="20_qcltw"]
 [ext_resource type="Texture2D" uid="uid://cgjve0fvq7ixb" path="res://assets/placeholder/yorkie/Eye Shine.png" id="21_nfm6x"]
 [ext_resource type="Texture2D" uid="uid://w31vmkrdqsn5" path="res://assets/placeholder/yorkie/EyeShadow.png" id="22_fepfh"]
 [ext_resource type="Texture2D" uid="uid://c5dojlqjjcsii" path="res://assets/placeholder/yorkie/Chin.png" id="23_bkaac"]
+[ext_resource type="Texture2D" uid="uid://dfyudgow6m54l" path="res://assets/placeholder/yorkie/IrisEye1.png" id="24_iris1"]
+[ext_resource type="Texture2D" uid="uid://bxcn3ntkm3l4w" path="res://assets/placeholder/yorkie/IrisEye2.png" id="25_iris2"]
 
 [node name="YorkieTab" type="VBoxContainer" unique_id=170270603]
 anchors_preset = 15
@@ -281,6 +282,21 @@ texture = ExtResource("18_foe0r")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head" unique_id=1968576766]
+unique_name_in_owner = true
+self_modulate = Color(0.8002418, 0.668927, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("25_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head" unique_id=1147742619]
 unique_name_in_owner = true
 self_modulate = Color(0.8002418, 0.668927, 0, 1)
@@ -292,7 +308,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("19_bxsrn")
+texture = ExtResource("24_iris1")
 expand_mode = 1
 stretch_mode = 5
 

@@ -35,9 +35,10 @@
 [ext_resource type="Texture2D" uid="uid://b3o5chu1ixqpr" path="res://assets/placeholder/wolf/EyeBack.png" id="29_3dcba"]
 [ext_resource type="Texture2D" uid="uid://vstdd8s1x3ee" path="res://assets/placeholder/wolf/Eyeline.png" id="30_norlh"]
 [ext_resource type="Texture2D" uid="uid://cbaohjt0wwauo" path="res://assets/placeholder/wolf/Eyewhite.png" id="31_2qhah"]
-[ext_resource type="Texture2D" uid="uid://q4aybpak5ood" path="res://assets/placeholder/wolf/Iris.png" id="32_tw2ow"]
 [ext_resource type="Texture2D" uid="uid://b32cx68khttih" path="res://assets/placeholder/wolf/Pupils.png" id="33_n5mkw"]
 [ext_resource type="Texture2D" uid="uid://bx55b6rlofxoa" path="res://assets/placeholder/wolf/Eyeshine.png" id="34_yaytk"]
+[ext_resource type="Texture2D" uid="uid://bbcctjkgjlgl3" path="res://assets/placeholder/wolf/IrisEye1.png" id="35_iris1"]
+[ext_resource type="Texture2D" uid="uid://cy0fkqnadfg3o" path="res://assets/placeholder/wolf/IrisEye2.png" id="36_iris2"]
 
 [node name="WolfTab" type="VBoxContainer" unique_id=170270603]
 anchors_preset = 15
@@ -649,6 +650,21 @@ texture = ExtResource("31_2qhah")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head" unique_id=1346270013]
+unique_name_in_owner = true
+self_modulate = Color(0.8002418, 0.668927, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("36_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head" unique_id=1147742619]
 unique_name_in_owner = true
 self_modulate = Color(0.8002418, 0.668927, 0, 1)
@@ -660,7 +676,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("32_tw2ow")
+texture = ExtResource("35_iris1")
 expand_mode = 1
 stretch_mode = 5
 

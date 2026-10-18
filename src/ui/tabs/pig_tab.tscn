@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://dy6lkn1cqprpb" path="res://assets/placeholder/pig/Mouth.png" id="6_7ryv5"]
 [ext_resource type="Texture2D" uid="uid://8kqbwdcp4r2b" path="res://assets/placeholder/pig/Eyeline.png" id="7_53yb3"]
 [ext_resource type="Texture2D" uid="uid://4smekc6yxing" path="res://assets/placeholder/pig/EyeWhite.png" id="8_11sui"]
-[ext_resource type="Texture2D" uid="uid://dlypfp0nyosl" path="res://assets/placeholder/pig/Iris.png" id="9_3i6yq"]
 [ext_resource type="Texture2D" uid="uid://cpmgdt6ki0heg" path="res://assets/placeholder/pig/Pupil.png" id="10_49lie"]
 [ext_resource type="Texture2D" uid="uid://bw50wkwxntl84" path="res://assets/placeholder/pig/Nose.png" id="11_0zkbi"]
 [ext_resource type="Texture2D" uid="uid://bvc7skxyfcqk4" path="res://assets/placeholder/pig/Eyebrows.png" id="12_mwt3q"]
@@ -23,6 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://dm0s8388l8s01" path="res://assets/placeholder/pig/Foot Back.png" id="21_kn438"]
 [ext_resource type="Texture2D" uid="uid://b8pws1r58hsvf" path="res://assets/placeholder/pig/Spots.png" id="22_c53k8"]
 [ext_resource type="Texture2D" uid="uid://xkw3gg4ynco0" path="res://assets/placeholder/pig/Foot Front Far.png" id="23_e5ai3"]
+[ext_resource type="Texture2D" uid="uid://1fi1h0yv7tqx" path="res://assets/placeholder/pig/IrisEye1.png" id="24_iris1"]
+[ext_resource type="Texture2D" uid="uid://d4d75f5ehys0v" path="res://assets/placeholder/pig/IrisEye2.png" id="25_iris2"]
 
 [node name="PigTab" type="VBoxContainer" unique_id=1767782738]
 anchors_preset = 15
@@ -164,6 +165,21 @@ texture = ExtResource("8_11sui")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Body" unique_id=1959406294]
+unique_name_in_owner = true
+self_modulate = Color(0, 0, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("25_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Body" unique_id=373362802]
 unique_name_in_owner = true
 self_modulate = Color(0, 0, 1, 1)
@@ -175,7 +191,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("9_3i6yq")
+texture = ExtResource("24_iris1")
 expand_mode = 1
 stretch_mode = 5
 

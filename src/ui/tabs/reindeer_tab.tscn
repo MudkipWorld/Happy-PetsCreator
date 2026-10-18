@@ -17,7 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://bp2yx0dyhjdcp" path="res://assets/placeholder/reindeer/Ear Inner.png" id="11_fwufu"]
 [ext_resource type="Texture2D" uid="uid://tg4lbnlqdlru" path="res://assets/placeholder/reindeer/Eye Brow.png" id="12_1ks4w"]
 [ext_resource type="Texture2D" uid="uid://bmwegxsy0h3jt" path="res://assets/placeholder/reindeer/Eye Whites .png" id="13_7xb7h"]
-[ext_resource type="Texture2D" uid="uid://f33yrednfhve" path="res://assets/placeholder/reindeer/Iris.png" id="14_4q3bn"]
 [ext_resource type="Texture2D" uid="uid://g65fn25mshlt" path="res://assets/placeholder/reindeer/Pupil.png" id="15_efru4"]
 [ext_resource type="Texture2D" uid="uid://caypml1khe0hf" path="res://assets/placeholder/reindeer/Eye Shine.png" id="16_fcvle"]
 [ext_resource type="Texture2D" uid="uid://8jsta3ufqim8" path="res://assets/placeholder/reindeer/Eye Lid.png" id="17_gqhin"]
@@ -26,6 +25,8 @@
 [ext_resource type="Texture2D" uid="uid://cxdjkd5vgturx" path="res://assets/placeholder/reindeer/Nose.png" id="20_k0jou"]
 [ext_resource type="Texture2D" uid="uid://d1odnob3ppmll" path="res://assets/placeholder/reindeer/Nose Shine.png" id="21_fwufu"]
 [ext_resource type="Texture2D" uid="uid://p1j3c31smpch" path="res://assets/placeholder/reindeer/Mouth.png" id="22_1ks4w"]
+[ext_resource type="Texture2D" uid="uid://ccy6jsjpj5418" path="res://assets/placeholder/reindeer/IrisEye1.png" id="23_iris1"]
+[ext_resource type="Texture2D" uid="uid://bpxkseauk00io" path="res://assets/placeholder/reindeer/IrisEye2.png" id="24_iris2"]
 
 [node name="ReindeerTab" type="VBoxContainer" unique_id=170270603]
 anchors_preset = 15
@@ -334,6 +335,21 @@ texture = ExtResource("13_7xb7h")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head" unique_id=1260342371]
+unique_name_in_owner = true
+self_modulate = Color(0.8002418, 0.668927, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("24_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head" unique_id=1147742619]
 unique_name_in_owner = true
 self_modulate = Color(0.8002418, 0.668927, 0, 1)
@@ -345,7 +361,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("14_4q3bn")
+texture = ExtResource("23_iris1")
 expand_mode = 1
 stretch_mode = 5
 

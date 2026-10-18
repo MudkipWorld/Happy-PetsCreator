@@ -15,11 +15,12 @@
 [ext_resource type="Texture2D" uid="uid://bwvawejcgm2jn" path="res://assets/placeholder/llama/Head Spot.png" id="13_y5h8d"]
 [ext_resource type="Texture2D" uid="uid://baghj0qh3y8uy" path="res://assets/placeholder/llama/Eyeline.png" id="14_m9mxp"]
 [ext_resource type="Texture2D" uid="uid://cb70iejtiid22" path="res://assets/placeholder/llama/EyeWhite.png" id="15_cj3jo"]
-[ext_resource type="Texture2D" uid="uid://boks8t3dhjwda" path="res://assets/placeholder/llama/Iris.png" id="16_ny1bo"]
 [ext_resource type="Texture2D" uid="uid://c2tmem5hr3xqp" path="res://assets/placeholder/llama/Pupil.png" id="17_k9y9p"]
 [ext_resource type="Texture2D" uid="uid://clchl6taxbvyk" path="res://assets/placeholder/llama/Nose.png" id="18_fs530"]
 [ext_resource type="Texture2D" uid="uid://bxn0ylj6l7m8a" path="res://assets/placeholder/llama/Mouth.png" id="19_ga8dr"]
 [ext_resource type="Texture2D" uid="uid://bev5la7y8f6sa" path="res://assets/placeholder/llama/Spot.png" id="20_kswsz"]
+[ext_resource type="Texture2D" uid="uid://dt2c2n6qauadg" path="res://assets/placeholder/llama/IrisEye1.png" id="21_iris1"]
+[ext_resource type="Texture2D" uid="uid://s2rcxss0gcn1" path="res://assets/placeholder/llama/IrisEye2.png" id="22_iris2"]
 
 [node name="LlamaTab" type="VBoxContainer" unique_id=906708733]
 anchors_preset = 15
@@ -273,6 +274,21 @@ texture = ExtResource("15_cj3jo")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head" unique_id=1266831330]
+unique_name_in_owner = true
+self_modulate = Color(0, 0, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("22_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head" unique_id=678216187]
 unique_name_in_owner = true
 self_modulate = Color(0, 0, 1, 1)
@@ -284,7 +300,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("16_ny1bo")
+texture = ExtResource("21_iris1")
 expand_mode = 1
 stretch_mode = 5
 

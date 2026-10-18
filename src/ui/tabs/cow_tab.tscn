@@ -33,11 +33,12 @@
 [ext_resource type="Texture2D" uid="uid://beeo5i7ckxc1q" path="res://assets/placeholder/cow/Nose.png" id="31_52ska"]
 [ext_resource type="Texture2D" uid="uid://crmfhsctpir85" path="res://assets/placeholder/cow/Nose Shine.png" id="32_rc7tp"]
 [ext_resource type="Texture2D" uid="uid://boff74tprs00u" path="res://assets/placeholder/cow/Eye Whites.png" id="33_5sn22"]
-[ext_resource type="Texture2D" uid="uid://v0vi1erym2e5" path="res://assets/placeholder/cow/Iris.png" id="34_0hfla"]
 [ext_resource type="Texture2D" uid="uid://dkvf23kbiulk1" path="res://assets/placeholder/cow/Pupil.png" id="35_838o8"]
 [ext_resource type="Texture2D" uid="uid://d0friooix468a" path="res://assets/placeholder/cow/Eye Shine.png" id="36_fkx7x"]
 [ext_resource type="Texture2D" uid="uid://dehhuh67do6q8" path="res://assets/placeholder/cow/Eye Shadow.png" id="37_jn693"]
 [ext_resource type="Texture2D" uid="uid://wnvs4htvvoi1" path="res://assets/placeholder/cow/Eyeliner.png" id="38_tilse"]
+[ext_resource type="Texture2D" uid="uid://dlrq42220thdt" path="res://assets/placeholder/cow/IrisEye1.png" id="39_iris1"]
+[ext_resource type="Texture2D" uid="uid://wlk157ee8uva" path="res://assets/placeholder/cow/IrisEye2.png" id="40_iris2"]
 
 [node name="CowTab" type="VBoxContainer" unique_id=137381626]
 anchors_preset = 15
@@ -610,6 +611,21 @@ texture = ExtResource("33_5sn22")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head" unique_id=2048395554]
+unique_name_in_owner = true
+self_modulate = Color(0, 0, 1, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("40_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head" unique_id=694904047]
 unique_name_in_owner = true
 self_modulate = Color(0, 0, 1, 1)
@@ -621,7 +637,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("34_0hfla")
+texture = ExtResource("39_iris1")
 expand_mode = 1
 stretch_mode = 5
 

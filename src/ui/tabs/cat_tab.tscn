@@ -18,7 +18,6 @@
 [ext_resource type="Texture2D" uid="uid://dj2pnntfwv748" path="res://assets/previews/cat/Brows.png" id="15_kgkgr"]
 [ext_resource type="Texture2D" uid="uid://ghwgwog563ne" path="res://assets/previews/cat/Eyelid.png" id="16_ude2k"]
 [ext_resource type="Texture2D" uid="uid://c0dxicr80chfd" path="res://assets/previews/cat/Eyewhite.png" id="17_u8fmg"]
-[ext_resource type="Texture2D" uid="uid://bv4djuvppiqfd" path="res://assets/previews/cat/Pupils.png" id="18_5tl6n"]
 [ext_resource type="Texture2D" uid="uid://cvfg6sngsvk8e" path="res://assets/previews/cat/Iris.png" id="19_ql7r4"]
 [ext_resource type="Texture2D" uid="uid://bvqi1d2sadrvn" path="res://assets/previews/cat/EyeShine.png" id="20_48s6y"]
 [ext_resource type="Texture2D" uid="uid://ecjdnfvs7qfs" path="res://assets/previews/cat/Spots2.png" id="21_l0dlt"]
@@ -26,6 +25,8 @@
 [ext_resource type="Texture2D" uid="uid://cgj8qa2bssfsp" path="res://assets/previews/cat/CalicoPattern2.png" id="23_ydgal"]
 [ext_resource type="Texture2D" uid="uid://dkab61mll1til" path="res://assets/previews/cat/Spots1.png" id="24_vko36"]
 [ext_resource type="Texture2D" uid="uid://ha1d01fm5yh3" path="res://assets/previews/cat/Stripes.png" id="25_kgkgr"]
+[ext_resource type="Texture2D" uid="uid://bpx43dpuu118w" path="res://assets/previews/cat/IrisEye1.png" id="26_iris1"]
+[ext_resource type="Texture2D" uid="uid://di20latonvdiv" path="res://assets/previews/cat/IrisEye2.png" id="27_iris2"]
 
 [node name="CatTab" type="VBoxContainer" unique_id=170270603]
 anchors_preset = 15
@@ -323,6 +324,21 @@ texture = ExtResource("17_u8fmg")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head/Eyeline/EyeWhite" unique_id=1888223631]
+unique_name_in_owner = true
+self_modulate = Color(0.8002418, 0.668927, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("27_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head/Eyeline/EyeWhite" unique_id=1147742619]
 unique_name_in_owner = true
 self_modulate = Color(0.8002418, 0.668927, 0, 1)
@@ -334,7 +350,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("18_5tl6n")
+texture = ExtResource("26_iris1")
 expand_mode = 1
 stretch_mode = 5
 

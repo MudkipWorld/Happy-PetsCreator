@@ -12,8 +12,10 @@ var color_layers : Dictionary = {
 	'glow' : Color.YELLOW,
 	'glow2' : Color.ORANGE,
 	'glow3' : Color.RED,
+	'iris2' : Color.LIME_GREEN,
 }
 var attributes : Dictionary = {
+	'heterochromia' : 0,
 	'glow' : 0,
 	'glow2' : 0,
 	'glow3' : 0,
@@ -25,15 +27,29 @@ var attributes : Dictionary = {
 var types : Dictionary = {
 	'__form' : ['default'],
 }
+var removed_colors : Array = []
 
 func get_data() -> Dictionary:
+	var out_colors : Dictionary = color_layers.duplicate()
+	var out_attributes : Dictionary = attributes.duplicate()
+	if !is_heterochromic():
+		out_colors.erase('iris2')
+	out_attributes.erase('heterochromia')
+	for layer in removed_colors:
+		out_colors.erase(layer)
 	var data : Dictionary = {
 		'base_layers' : from_color_to_dictionary(base_layers),
-		'color_layers' : from_color_to_dictionary(color_layers),
-		'types' : types,
-		'attributes' : attributes
+		'color_layers' : from_color_to_dictionary(out_colors),
+		'types' : types.duplicate(true),
+		'attributes' : out_attributes
 	}
 	return data
+
+func is_heterochromic() -> bool:
+	return attributes.get('heterochromia', 0) != 0
+
+func iris2_color() -> Color:
+	return color_layers.get('iris2', color_layers['iris']) if is_heterochromic() else color_layers['iris']
 
 static func from_color_to_dictionary(data : Dictionary) -> Dictionary:
 	var output : Dictionary = {}
@@ -1330,11 +1346,8 @@ class BatAttirbutes extends Attirbute:
 		'brow': Color.WHITE,
 		'earOuter': Color.WHITE,
 		'eyeShadow' : Color.DIM_GRAY,
-		'eyeLid': Color.DIM_GRAY,
 		'eyeLine': Color.DIM_GRAY,
-		'eyeDark': Color.DIM_GRAY,
 		'earInner': Color.HOT_PINK,
-		'earShadow': Color.DIM_GRAY,
 		
 		'pupil' : Color.DARK_BLUE,
 		'iris' : Color.BLUE,
@@ -1359,6 +1372,7 @@ class BatAttirbutes extends Attirbute:
 		base_layers = base.duplicate(true)
 		color_layers.merge(colors, true)
 		attributes.merge(att, true)
+		removed_colors = ['eyeLid', 'eyeDark', 'earShadow']
 
 class MonsterAttirbutes extends Attirbute:
 	
@@ -1379,8 +1393,6 @@ class MonsterAttirbutes extends Attirbute:
 		'brow': Color.WHITE,
 		'ear': Color.WHITE,
 		'eyeShad' : Color.DIM_GRAY,
-		'eyeLid': Color.DIM_GRAY,
-		'eyeDark': Color.DIM_GRAY,
 		'eyeWhite': Color.WHITE,
 		'eyeHilite': Color.WHITE,
 		'earInner': Color.HOT_PINK,
@@ -1408,6 +1420,7 @@ class MonsterAttirbutes extends Attirbute:
 		base_layers = base.duplicate(true)
 		color_layers.merge(colors, true)
 		attributes.merge(att, true)
+		removed_colors = ['eyeLid', 'eyeDark']
 
 class AlienAttirbutes extends Attirbute:
 	
@@ -1426,12 +1439,10 @@ class AlienAttirbutes extends Attirbute:
 		'antennaeEnd': Color.WHITE,
 		'antennaeStalk': Color.WHITE,
 		'eyeShadow' : Color.DIM_GRAY,
-		'eyeLid': Color.DIM_GRAY,
 		'eyeLine': Color.DIM_GRAY,
-		'eyeDark': Color.DIM_GRAY,
+		'earOuter': Color.WHITE,
 		'earInner': Color.HOT_PINK,
 		'eyeMask': Color.DIM_GRAY,
-		'earShadow': Color.DIM_GRAY,
 		'tailTip': Color.WHITE,
 		'footLines': Color.DIM_GRAY,
 		
@@ -1449,7 +1460,13 @@ class AlienAttirbutes extends Attirbute:
 		'chest'  : Color.WHITE,
 		}
 
-	static var att : Dictionary ={}
+	static var att : Dictionary ={
+		'star' : 0,
+		'circle' : 0,
+		'splatter' : 0,
+		'stripes' : 0,
+		'bigStripe' : 0,
+	}
 	
 	static var pet_types : Dictionary = {
 			'__form' : ['default'],
@@ -1460,8 +1477,32 @@ class AlienAttirbutes extends Attirbute:
 			 "shapeTail":["default","bunny","wiggly","swirl","mace","comb"],
 			 "shapeCrestDark":["default","pointy","curvy"]
 		}
+	
+	static var linked_types : Dictionary = {
+		'shapeMarking' : 'shapeHead',
+		'shapeEarInner' : 'shapeEarOuter',
+		'shapeTailTip' : 'shapeTail',
+		'shapeCrestLight' : 'shapeCrestDark',
+	}
 
 	func _init() -> void:
 		base_layers = base.duplicate(true)
 		color_layers.merge(colors, true)
 		attributes.merge(att, true)
+		removed_colors = ['eyeLid', 'eyeDark', 'earShadow']
+		
+		types = {
+			'__form' : ['default'],
+			'shapeHead' : ['default'],
+			'shapeTummy' : ['default'],
+			'shapeAntennae' : ['default'],
+			'shapeEarOuter' : ['default'],
+			'shapeTail' : ['default'],
+			'shapeCrestDark' : ['default'],
+		}
+	
+	func get_data() -> Dictionary:
+		var data : Dictionary = super.get_data()
+		for linked in linked_types.keys():
+			data['types'][linked] = types.get(linked_types[linked], ['default']).duplicate()
+		return data

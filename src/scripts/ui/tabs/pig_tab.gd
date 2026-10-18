@@ -31,6 +31,7 @@ func recolor_part():
 	
 	%Eyeline.self_modulate = sel_dat.color_layers['eyeShadow']
 	%Iris.self_modulate = sel_dat.color_layers['iris']
+	%Iris2.self_modulate = sel_dat.iris2_color()
 	%Pupil.self_modulate = sel_dat.color_layers['pupil']
 	check_special()
 

@@ -28,3 +28,5 @@ func _toggled(toggled_on: bool) -> void:
 		item['data'].attributes.set(color_layer, val)
 	
 	Globalsignals.check_part.emit()
+	if color_layer == 'heterochromia':
+		Globalsignals.recolor_part.emit()

@@ -18,7 +18,6 @@
 [ext_resource type="Texture2D" uid="uid://brsno2d5d6h1n" path="res://assets/placeholder/triceratops/Horn Base.png" id="12_c4rxf"]
 [ext_resource type="Texture2D" uid="uid://c1nwj4ou3fctu" path="res://assets/placeholder/triceratops/Horn Shadow.png" id="13_wwcgp"]
 [ext_resource type="Texture2D" uid="uid://dg3w03gjaiko5" path="res://assets/placeholder/triceratops/Eye Whites.png" id="14_yk5qj"]
-[ext_resource type="Texture2D" uid="uid://dqm6hg8tx4mk" path="res://assets/placeholder/triceratops/Iris.png" id="15_4jj5m"]
 [ext_resource type="Texture2D" uid="uid://ucsnx42vc2t2" path="res://assets/placeholder/triceratops/Pupil.png" id="16_5gq51"]
 [ext_resource type="Texture2D" uid="uid://bf3mbkuvamnrx" path="res://assets/placeholder/triceratops/Eye Shine.png" id="17_c4rxf"]
 [ext_resource type="Texture2D" uid="uid://c3x3r3meumyya" path="res://assets/placeholder/triceratops/Head Spots.png" id="17_wwcgp"]
@@ -28,6 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://dpqbn3jbeuw0g" path="res://assets/placeholder/triceratops/Nose Shadow.png" id="23_bvrhh"]
 [ext_resource type="Texture2D" uid="uid://bdpepjfi4eg57" path="res://assets/placeholder/triceratops/Mouth.png" id="24_boabg"]
 [ext_resource type="Texture2D" uid="uid://chlrr143dkbm8" path="res://assets/placeholder/triceratops/Head Hilite.png" id="27_vr7kh"]
+[ext_resource type="Texture2D" uid="uid://bvtvgvd11dop3" path="res://assets/placeholder/triceratops/IrisEye1.png" id="28_iris1"]
+[ext_resource type="Texture2D" uid="uid://d1onovnsyk3fh" path="res://assets/placeholder/triceratops/IrisEye2.png" id="29_iris2"]
 
 [node name="TriceratopsTab" type="VBoxContainer" unique_id=170270603]
 anchors_preset = 15
@@ -376,6 +377,21 @@ texture = ExtResource("14_yk5qj")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head" unique_id=1245126737]
+unique_name_in_owner = true
+self_modulate = Color(0.8002418, 0.668927, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("29_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head" unique_id=1147742619]
 unique_name_in_owner = true
 self_modulate = Color(0.8002418, 0.668927, 0, 1)
@@ -387,7 +403,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("15_4jj5m")
+texture = ExtResource("28_iris1")
 expand_mode = 1
 stretch_mode = 5
 

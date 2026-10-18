@@ -19,11 +19,12 @@
 [ext_resource type="Texture2D" uid="uid://dx4gnqak5xwr7" path="res://assets/placeholder/mainecoon/Mouth.png" id="16_8tdbx"]
 [ext_resource type="Texture2D" uid="uid://ced5ix2a51cnu" path="res://assets/placeholder/mainecoon/Brow.png" id="17_2ye54"]
 [ext_resource type="Texture2D" uid="uid://cpt13yha7rc6p" path="res://assets/placeholder/mainecoon/Eye Whites.png" id="18_ytbwi"]
-[ext_resource type="Texture2D" uid="uid://bkmtrqg8tnlrw" path="res://assets/placeholder/mainecoon/Iris.png" id="19_tcgnq"]
 [ext_resource type="Texture2D" uid="uid://wcjrgy6ji88p" path="res://assets/placeholder/mainecoon/Pupil.png" id="20_i52vk"]
 [ext_resource type="Texture2D" uid="uid://c6mk3nlf36ijy" path="res://assets/placeholder/mainecoon/Eye Shine.png" id="21_b3srg"]
 [ext_resource type="Texture2D" uid="uid://i7oc8mcko4eg" path="res://assets/placeholder/mainecoon/Eyeshadow.png" id="22_iawec"]
 [ext_resource type="Texture2D" uid="uid://6rn0ku332pyr" path="res://assets/placeholder/mainecoon/Whiskers.png" id="23_8wnrf"]
+[ext_resource type="Texture2D" uid="uid://bt8qbd888r64f" path="res://assets/placeholder/mainecoon/IrisEye1.png" id="24_iris1"]
+[ext_resource type="Texture2D" uid="uid://d36bq4qdmcp0q" path="res://assets/placeholder/mainecoon/IrisEye2.png" id="25_iris2"]
 
 [node name="MainecoonTab" type="VBoxContainer" unique_id=170270603]
 anchors_preset = 15
@@ -344,6 +345,21 @@ texture = ExtResource("18_ytbwi")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Iris2" type="TextureRect" parent="Control/Head" unique_id=2032605748]
+unique_name_in_owner = true
+self_modulate = Color(0.8002418, 0.668927, 0, 1)
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("25_iris2")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="Iris" type="TextureRect" parent="Control/Head" unique_id=1147742619]
 unique_name_in_owner = true
 self_modulate = Color(0.8002418, 0.668927, 0, 1)
@@ -355,7 +371,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("19_tcgnq")
+texture = ExtResource("24_iris1")
 expand_mode = 1
 stretch_mode = 5
 
