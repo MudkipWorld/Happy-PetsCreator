@@ -9,13 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://cklwyvhdkgvn2" path="res://ui/tabs/yorkie_tab.tscn" id="7_7awn6"]
 [ext_resource type="PackedScene" uid="uid://6a0rcm4hece0" path="res://ui/tabs/reindeer_tab.tscn" id="8_v1cjv"]
 [ext_resource type="PackedScene" uid="uid://dq784337pfghw" path="res://ui/tabs/triceratops_tab.tscn" id="9_bqrgr"]
-
-[ext_resource type="PackedScene" uid="uid://ajfyzu3dgey2n" path="res://ui/tabs/pig_tab.tscn" id="10_si0w5"]
-[ext_resource type="PackedScene" uid="uid://c89m63c2u009f" path="res://ui/tabs/llama_tab.tscn" id="11_v0e6e"]
-[ext_resource type="PackedScene" uid="uid://ac4r19jv1wf5j" path="res://ui/tabs/turkey_tab.tscn" id="12_ivtec"]
-
-[ext_resource type="PackedScene" uid="uid://ayhb8uy86rhcq" path="res://ui/tabs/chicken_tab.tscn" id="13_vc0xk"]
-
+[ext_resource type="PackedScene" uid="uid://jfy0u3dgey2n" path="res://ui/tabs/pig_tab.tscn" id="10_si0w5"]
+[ext_resource type="PackedScene" uid="uid://daam63c2u01af" path="res://ui/tabs/llama_tab.tscn" id="11_v0e6e"]
+[ext_resource type="PackedScene" uid="uid://c4r2ajv1wf5j" path="res://ui/tabs/turkey_tab.tscn" id="12_ivtec"]
+[ext_resource type="PackedScene" uid="uid://yhb8uy86rhcq" path="res://ui/tabs/chicken_tab.tscn" id="13_vc0xk"]
 [ext_resource type="PackedScene" uid="uid://b1bj3nxlco0ph" path="res://ui/tabs/cow_tab.tscn" id="14_d3f77"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aekvq"]

@@ -6,7 +6,8 @@ enum ActionType {
 	Load,
 	Reference,
 	LoadData,
-	SaveSeparate
+	SaveSeparate,
+	SaveSelected
 }
 
 
@@ -48,6 +49,11 @@ func file_menu_selected(id : int):
 			%FileDialog.filters = ['*.json']
 			%FileDialog.file_mode = FileDialog.FileMode.FILE_MODE_SAVE_FILE
 			%FileDialog.popup()
+		6:
+			current_action = ActionType.SaveSelected
+			%FileDialog.filters = ['*.json']
+			%FileDialog.file_mode = FileDialog.FileMode.FILE_MODE_SAVE_FILE
+			%FileDialog.popup()
 
 func _on_file_dialog_file_selected(path: String) -> void:
 	match current_action:
@@ -59,6 +65,8 @@ func _on_file_dialog_file_selected(path: String) -> void:
 			SaveAndLoad.load_reference(path)
 		ActionType.SaveSeparate:
 			SaveAndLoad.save_file_separate(path)
+		ActionType.SaveSelected:
+			SaveAndLoad.save_selection(path)
 
 func _on_file_dialog_files_selected(paths: PackedStringArray) -> void:
 	match current_action:

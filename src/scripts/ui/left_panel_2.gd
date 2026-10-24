@@ -51,9 +51,7 @@ func _on_add_data_pressed() -> void:
 	check_type()
 
 func _on_remove_data_pressed() -> void:
-	for itm in GlobalData.held_items:
-		GlobalData.remove_data(DataCreator.current_pet, itm)
-		check_type()
+	remove_data()
 
 func _on_pets_tree_multi_selected(item: TreeItem, _column: int, _selected: bool) -> void:
 	await get_tree().process_frame
@@ -89,3 +87,20 @@ func _on_pets_tree_empty_clicked(_click_position: Vector2, _mouse_button_index: 
 	GlobalData.held_items.clear()
 	%PetsTree.deselect_all()
 	Globalsignals.deselected.emit()
+
+func _on_search_list_text_changed(new_text: String) -> void:
+	if new_text.is_empty():
+		for i : TreeItem in %PetsTree.get_root().get_children():
+			i.visible = true
+		return
+	
+	var text : String = new_text.to_lower()
+	for i : TreeItem in %PetsTree.get_root().get_children():
+		i.visible = true
+		if i.get_text(0).to_lower().find(text) == -1:
+			i.visible = false
+
+func remove_data() -> void:
+	for itm in GlobalData.held_items:
+		GlobalData.remove_data(DataCreator.current_pet, itm)
+		check_type()

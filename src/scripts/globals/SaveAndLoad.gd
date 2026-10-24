@@ -23,6 +23,15 @@ func save_file_separate(path : String):
 		file.flush()
 		file.close()
 
+func save_selection(path : String):
+	var data : Dictionary = get_data_selection()
+
+	var file = FileAccess.open(path, FileAccess.WRITE)
+	var saved_data : String = JSON.stringify(data, "\t")
+	file.store_string(saved_data)
+	file.flush()
+	file.close()
+
 func load_file(path : String):
 	var file = FileAccess.open(path, FileAccess.READ)
 	var str_data : String = file.get_as_text()
@@ -66,6 +75,31 @@ func get_data() -> Dictionary:
 	var data : Dictionary = {}
 	for key in GlobalData.pet_map.values():
 		for i in key.get('pets_data', []):
+			var item : Attirbute = i.get('data', null)
+			if item == null : continue
+			var dat : Dictionary = item.get_data()
+			dat['name'] = i.get('name', 'Placeholder')
+			dat['cost'] = i.get('cost',100)
+			dat['ap_cost'] = i.get('ap_cost',0)
+			
+			dat['ticket_cost'] = i.get('ticket_cost',0)
+			dat['flags'] = i.get('flags',0)
+			
+			dat['age_per_level'] = i.get('age_per_level',7200)
+			dat['max_hunger'] = i.get('max_hunger',14400)
+			dat['min_level'] = i.get('min_level',1)
+			var pet_name = key.get('name', null)
+			if pet_name == null : continue
+			if !data.has(pet_name):
+				data[pet_name] = []
+			data[pet_name].append(dat)
+	return data
+
+func get_data_selection() -> Dictionary:
+	var data : Dictionary = {}
+	for key in GlobalData.pet_map.values():
+		for i in key.get('pets_data', []):
+			if i not in GlobalData.held_items: continue
 			var item : Attirbute = i.get('data', null)
 			if item == null : continue
 			var dat : Dictionary = item.get_data()
