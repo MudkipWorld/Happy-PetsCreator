@@ -22,6 +22,7 @@ var attributes : Dictionary = {
 	'gradientGlow': 0,
 	'candyGlow': 0,
 	'ghost' : 0,
+	'vampire' : 0,
 	'scale' : 100
 }
 var types : Dictionary = {
@@ -32,6 +33,10 @@ var removed_colors : Array = []
 func get_data() -> Dictionary:
 	var out_colors : Dictionary = color_layers.duplicate()
 	var out_attributes : Dictionary = attributes.duplicate()
+	if out_attributes.get('vampireNightItem', '').is_empty():
+		if out_attributes.has('vampireNightItem'):
+			out_attributes.erase('vampireNightItem')
+	
 	if !is_heterochromic():
 		out_colors.erase('iris2')
 	out_attributes.erase('heterochromia')

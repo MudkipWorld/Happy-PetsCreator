@@ -35,6 +35,12 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
 
+[node name="VampItemName" type="LineEdit" parent="Margin/VBox/ScrollContainer/Data" unique_id=1908285693]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+placeholder_text = "Vampire Item Name"
+
 [node name="Colors" type="FoldableContainer" parent="Margin/VBox/ScrollContainer/Data" unique_id=918148018]
 unique_name_in_owner = true
 layout_mode = 2
@@ -70,3 +76,5 @@ title = "Types"
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
+
+[connection signal="text_changed" from="Margin/VBox/ScrollContainer/Data/VampItemName" to="." method="_on_vamp_item_name_text_changed"]
