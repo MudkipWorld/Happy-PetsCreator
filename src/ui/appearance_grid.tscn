@@ -111,3 +111,11 @@ metadata/_tab_index = 12
 visible = false
 layout_mode = 2
 metadata/_tab_index = 13
+
+[node name="Label2" type="Label" parent="." unique_id=622207910]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Note : If a Variable/ Parameter doesn't work/ appears broken in game, it is either unused or wasn't fully implemented in the original game."
+horizontal_alignment = 1
+autowrap_mode = 2

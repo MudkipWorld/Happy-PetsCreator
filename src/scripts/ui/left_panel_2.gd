@@ -6,6 +6,7 @@ func _ready() -> void:
 		%PetOption.add_item(str(i))
 	
 	GlobalData.left_ui_2 = self
+	Globalsignals.attribute_selected.connect(update_data)
 	await get_tree().create_timer(0.1).timeout
 	GlobalData.set_held_data(GlobalData.PetType.Cat)
 	check_type()
@@ -53,22 +54,19 @@ func _on_add_data_pressed() -> void:
 func _on_remove_data_pressed() -> void:
 	remove_data()
 
-func _on_pets_tree_multi_selected(item: TreeItem, _column: int, _selected: bool) -> void:
+func _on_pets_tree_multi_selected(_item: TreeItem, _column: int, _selected: bool) -> void:
 	await get_tree().process_frame
 	if %PetsTree.get_root() == null : return
 	GlobalData.held_items.clear()
 	for i in %PetsTree.get_root().get_children():
-		var _item : TreeItem = i
-		if _item.is_selected(0) && _item.get_metadata(0) is Dictionary:
-			GlobalData.held_items.append(_item.get_metadata(0))
-			
+		var item : TreeItem = i
+		if item.is_selected(0) && item.get_metadata(0) is Dictionary:
+			GlobalData.held_items.append(item.get_metadata(0))
 	
 	if GlobalData.held_items.size() > 0:
 		Globalsignals.attribute_selected.emit()
 		Globalsignals.attribute_selected.emit()
 		Globalsignals.recolor_part.emit()
-
-	%LineEdit.text = item.get_metadata(0).get('name', 'Placeholder') if item.get_metadata(0) != null else 'Placeholder'
 
 func sort_tree_item_children():
 	if GlobalData.held_data.is_empty() or GlobalData.held_data.size() < 2: return
@@ -104,3 +102,8 @@ func remove_data() -> void:
 	for itm in GlobalData.held_items:
 		GlobalData.remove_data(DataCreator.current_pet, itm)
 		check_type()
+
+func update_data() -> void:
+	if GlobalData.held_items.size() < 1: return
+	var item : Dictionary = GlobalData.held_items[0]
+	%LineEdit.text = item.get('name', 'Placeholder') if item != null && !item.is_empty() else 'Placeholder'
