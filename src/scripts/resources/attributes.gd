@@ -1530,7 +1530,7 @@ class DachshundAttirbutes extends Attirbute:
 	static var colors : Dictionary = {
 			'earInner' : Color.HOT_PINK,
 			'earOuter' : Color.WHITE,
-			'brow' : Color.WHITE,
+			'eyeBrow' : Color.WHITE,
 			
 			'eyeLid' : Color.DARK_SLATE_GRAY,
 			'eyeShad' : Color.DARK_SLATE_GRAY,
